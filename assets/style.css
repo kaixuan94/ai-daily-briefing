@@ -1,0 +1,431 @@
+:root {
+  --paper: #f4efe6;
+  --paper-deep: #ebe3d4;
+  --card: #fffdf8;
+  --ink: #1c1712;
+  --ink-soft: #4e463c;
+  --rule: #ddcfc0;
+  --accent: #9a3418;
+  --link: #1a4f86;
+  --shadow: 0 1px 0 rgba(28, 23, 18, 0.04);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #161310;
+    --paper-deep: #241f1a;
+    --card: #1e1a16;
+    --ink: #f4eee6;
+    --ink-soft: #c9bbaa;
+    --rule: #3c342c;
+    --accent: #f0a090;
+    --link: #9ec4f0;
+    --shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 420px at 50% -80px, rgba(154, 52, 24, 0.08), transparent 60%),
+    var(--paper);
+  color: var(--ink);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "Source Han Sans SC", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.18em;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.6rem;
+  transform: translateY(-160%);
+  background: var(--card);
+  color: var(--ink);
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  z-index: 20;
+}
+
+.skip:focus { transform: none; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.header-inner,
+.wrap {
+  width: min(46rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.4rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", "PMingLiU", serif;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.brand-name {
+  display: block;
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", "PMingLiU", serif;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.brand-sub {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+.header-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.header-nav a:hover { color: var(--accent); }
+
+.wrap { padding: 1.6rem 0 3.2rem; }
+
+h1, h2, h3 {
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", "PMingLiU", serif;
+  line-height: 1.35;
+  font-weight: 700;
+  scroll-margin-top: 4.4rem;
+}
+
+.lede {
+  margin: 0.4rem 0 1.6rem;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+
+.section-label {
+  margin: 0 0 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+}
+
+.archive {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1rem 1.05rem 0.9rem;
+}
+
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link:hover .card-title { color: var(--accent); }
+
+.card time {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.weekday {
+  margin-left: 0.45rem;
+  color: var(--ink-soft);
+}
+
+.card-title {
+  display: block;
+  margin: 0.25rem 0 0.35rem;
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.card-meta,
+.card p {
+  margin: 0.2rem 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.75rem 0 0.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.pills li {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  background: var(--paper-deep);
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.95rem;
+}
+
+.card-actions a { font-weight: 650; }
+
+.brief h1 {
+  margin: 0.15rem 0 0.8rem;
+  font-size: clamp(1.6rem, 4.4vw, 2.05rem);
+}
+
+.brief ul.meta {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+
+.brief ul.meta > li { margin: 0.28rem 0; }
+
+.brief ul.meta ul {
+  margin: 0.25rem 0 0.15rem;
+  padding-left: 1.15rem;
+}
+
+.toc {
+  margin: 0 0 2rem;
+}
+
+.toc ol {
+  list-style: none;
+  counter-reset: toc;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.toc li { counter-increment: toc; }
+
+.toc a {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 0.62rem 0.75rem;
+  line-height: 1.45;
+}
+
+.toc a::before {
+  content: counter(toc, decimal-leading-zero);
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  flex: none;
+  width: 1.7rem;
+}
+
+.toc a:hover { border-color: var(--accent); }
+
+.brief h2 {
+  margin: 2.4rem 0 0.8rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.38rem;
+}
+
+.brief h3 {
+  margin: 1.7rem 0 0.45rem;
+  font-size: 1.12rem;
+}
+
+.brief p { margin: 0.7rem 0; }
+
+.brief ul,
+.brief ol { padding-left: 1.2rem; }
+
+.brief li { margin: 0.22rem 0; }
+
+.brief li > strong:first-child {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.brief a { overflow-wrap: anywhere; }
+
+.brief hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 1.8rem 0;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.8rem 0 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.brief table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 36rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.brief th,
+.brief td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.brief th {
+  background: var(--paper-deep);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.brief tr:last-child td { border-bottom: 0; }
+
+code {
+  font-family: "SFMono-Regular", ui-monospace, "Sarasa Mono SC", Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: var(--paper-deep);
+  padding: 0.08em 0.35em;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+}
+
+.brief-end,
+.site-footer {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.brief-end {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  margin-top: 2.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.site-footer {
+  width: min(46rem, calc(100% - 2rem));
+  margin: 0 auto 2rem;
+  padding-top: 0.4rem;
+}
+
+.site-footer p { margin: 0.2rem 0; }
+
+.empty {
+  padding: 1rem;
+  border: 1px dashed var(--rule);
+  border-radius: 12px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  body { font-size: 1.02rem; }
+
+  .header-inner,
+  .wrap,
+  .site-footer {
+    width: min(46rem, calc(100% - 1.4rem));
+  }
+
+  .card-title { font-size: 1.22rem; }
+}
+
+@media print {
+  .site-header,
+  .skip,
+  .brief-end,
+  .card-actions { display: none; }
+
+  body { background: white; color: black; }
+
+  .brief a { color: black; }
+}
