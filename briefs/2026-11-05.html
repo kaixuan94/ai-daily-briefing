@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161310" media="(prefers-color-scheme: dark)">
+  <title>AI圈每日简报 · 2026-11-05 — 凯旋</title>
+  <meta name="description" content="2026-11-05 AI圈每日简报，0 个分类，41 条精选。">
+  <link rel="canonical" href="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-05.html">
+  <meta property="og:title" content="AI圈每日简报 · 2026-11-05 — 凯旋">
+  <meta property="og:description" content="2026-11-05 AI圈每日简报，0 个分类，41 条精选。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-05.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">简</span>
+        <span>
+          <span class="brand-name">凯旋</span>
+          <span class="brand-sub">AI圈每日简报</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="站点">
+        <a href="../index.html">目录</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+    <article class="brief">
+      <h1 id="ai圈每日简报-2026-11-05">AI圈每日简报 · 2026-11-05</h1>
+      <blockquote>
+      <p>时间窗：2026-11-04 09:03 至 2026-11-05 09:03（香港时间）
+      监控范围：账号池 <code>ai_monitor_accounts.md</code>（约 304 个手柄，含 5 位核心 KOL），按 15 人一批共 21 批 <code>from:</code> 检索（排除转推与回复，每批取相关度前 25 条），另对核心 KOL 做按时间排序的补充检索，并对 50 条重点帖拉取全文核对。
+      核心 KOL 覆盖：亦仁 @yiren_ai、范凯 @fankaishuoai（高产）、Bruce Qin @qzhxjhj、身心修复局 @MindfulReturn 均有原创帖入选；Sac @Saccc_c 在本时间窗内未检索到原创帖。
+      说明：数据均来自 X 原帖，部分数字为作者自报或媒体转述、未经独立复现，已在条目中标注。本日美国中期选举结果刷屏，纯政治评论已过滤，只保留对市场和 AI 产业有信息量的部分。</p>
+      </blockquote>
+      <h2 id="今日三件事">今日三件事</h2>
+      <ol>
+      <li><strong>OpenAI 用自动化流水线批量修 Linux 内核漏洞：</strong>用一款即将发布的网络安全模型，单次运行验证并生成了 948 个 Linux 内核本地提权漏洞的补丁，API 总成本 120 万美元。同一天 OpenAI 发布 ChatGPT Images 2.6（GIF、参考图、出图快 50%），并宣布收购给 Codex 做代码浏览和审查组件的 Pierre。</li>
+      <li><strong>「不读代码」成为工程新话题：</strong>@poteto 称团队在不读代码的情况下把出货量提高了 30 倍、性能不降；Factory 的 Eno Reyes 认为「测试才是事实来源」，pre-commit 钩子每小时给 agent 720 次尝试，CI 只有 6 次；Bun 作者预测「依赖时代结束」。</li>
+      <li><strong>美国中期选举对 AI 链和币圈的冲击：</strong>民主党拿下两院，道指单日涨 3.03%，但费城半导体指数跌 3.1%、美光跌 7%、CoreWeave 跌约 10%；布伦特原油跌 8.7%，BTC 重回 8 万美元上方。新当选的得州参议员要求 AI 数据中心自付电网成本。</li>
+      </ol>
+      <hr>
+      <h2 id="1-ai公司官方核心研究者与工程师">1. AI公司/官方/核心研究者与工程师</h2>
+      <h3 id="11-openai自动化漏洞挖掘利用与修补流水线">1.1 OpenAI：自动化漏洞挖掘、利用与修补流水线</h3>
+      <ul>
+      <li><strong>核心观点：</strong>OpenAI 安全研究员搭了一条从发现、利用到修补漏洞的全自动流水线。用一款即将发布的网络安全模型跑一次，验证并生成了 948 个 Linux 内核本地提权漏洞的补丁，API 总成本 120 万美元（约 1266 美元一个）。约 26 万浏览。@thsottiaux（OpenAI）同时称已组建「世界级网络安全团队」，后续几周会公开更多。</li>
+      <li><strong>可行动点：</strong>运维 Linux 服务器的团队，接下来几个月要留意内核安全更新的密度，可能会明显上升。做安全的可以开始评估「用模型批量审计自家代码」的成本。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/OpenAI/status/2118119451401048497" target="_blank" rel="noopener noreferrer">https://x.com/OpenAI/status/2118119451401048497</a> ；<a href="https://x.com/thsottiaux/status/2118146794362405231" target="_blank" rel="noopener noreferrer">https://x.com/thsottiaux/status/2118146794362405231</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@OpenAI、@thsottiaux）</li>
+      </ul>
+      <h3 id="12-chatgpt-images-26gifsvg-导出出图快-50">1.2 ChatGPT Images 2.6：GIF、SVG 导出、出图快 50%</h3>
+      <ul>
+      <li><strong>核心观点：</strong>ChatGPT 和 Codex 所有档位今天起可用。新增 GIF 生成和参考图；API 有两个版本，Flare 偏速度（低画质最快约 6 秒一张），Sunburst 偏画质。开发者可以导出 SVG 矢量图，还有图片标注（只改圈出的区域）和「复杂度」参数。价格和 2.5 相同：生成图片每 100 万 token 30 美元。OpenAI 称全球每周生成 40 亿张图。</li>
+      <li><strong>关键方法/工具：</strong>OpenArt 公开的 GIF 提示词做法：先让模型在一张图里按 3 列 2 行画 6 帧连续画面（精灵图），再按顺序播放。</li>
+      <li><strong>可行动点：</strong>做图标、Logo 的可以直接试 SVG 导出，省掉重新描矢量图这一步。速度和画质说法来自 OpenAI，还没有第三方测试。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/OpenAI/status/2118124944928432327" target="_blank" rel="noopener noreferrer">https://x.com/OpenAI/status/2118124944928432327</a> ；<a href="https://x.com/dotey/status/2118127825186177270" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2118127825186177270</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@OpenAI、@dotey）</li>
+      </ul>
+      <h3 id="13-openai-收购-pierre补齐-codex-的看代码审代码">1.3 OpenAI 收购 Pierre，补齐 Codex 的「看代码、审代码」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Codex App 里浏览文件（Trees）和看改动（Diffs）的两个开源组件就是 Pierre 做的。OpenAI 的说法是要把从 AI 新建分支到代码上线的整条流程都放进 Codex。开源项目继续开源，金额未披露，还需监管审批。</li>
+      <li><strong>可行动点：</strong>AI 写代码的瓶颈正在从「写」转向「审」。自己团队如果审代码跟不上，先投资 diff 可读性和审查工具。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2118010240587239540" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2118010240587239540</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@dotey）</li>
+      </ul>
+      <h3 id="14-不读代码也能高速出货两位工程师的数据">1.4 「不读代码」也能高速出货：两位工程师的数据</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@poteto 预告 AI Engineer 大会演讲，称团队「在不读代码的情况下把出货量提高了 30 倍，性能不比上线时差」，10 月有约 230 人至少合入过 1 个 PR，靠的是对 agent 友好的架构。约 39 万浏览。@kentcdodds 一句「Don't read the code」也有 3.6 万浏览。</li>
+      <li><strong>关键方法/工具：</strong>Factory 的 Eno Reyes 在斯坦福课上的数据：pre-commit 钩子每小时给 agent 720 次尝试，本地测试 60 次，CI 6 次，人工审查不到 1 次。5 秒检查和 10 分钟流水线之间差 120 倍。他的团队约 50 人，代码每 2–3 个月几乎全部换新，功能不变，所以「测试才是事实来源」。</li>
+      <li><strong>可行动点：</strong>找出你 agent 工作循环里最慢的那一道检查，先把它变快。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/poteto/status/2118017093677494706" target="_blank" rel="noopener noreferrer">https://x.com/poteto/status/2118017093677494706</a> ；<a href="https://x.com/mihail_eric/status/2118025723802001796" target="_blank" rel="noopener noreferrer">https://x.com/mihail_eric/status/2118025723802001796</a> ；<a href="https://x.com/kentcdodds/status/2117995178497806803" target="_blank" rel="noopener noreferrer">https://x.com/kentcdodds/status/2117995178497806803</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@poteto、@mihail_eric、@kentcdodds）</li>
+      </ul>
+      <h3 id="15-bun-作者依赖时代结束了">1.5 Bun 作者：「依赖时代结束了」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>同一个 Brotli 漏洞影响了 .NET、Node、Bun、Envoy 等，依赖成了太大的攻击面。重写一个依赖只需要一条提示词时，为什么还要冒这个险？约 8 万浏览。另外 Bun v1.5 将包含提前编译器（AOT）。</li>
+      <li><strong>可行动点：</strong>小而稳定的依赖（工具函数、格式解析）可以考虑让 agent 内联重写并补测试；大型、安全敏感的库（加密、压缩）不建议自己重写。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/jarredsumner/status/2118089731481477243" target="_blank" rel="noopener noreferrer">https://x.com/jarredsumner/status/2118089731481477243</a> ；<a href="https://x.com/jarredsumner/status/2118110874108105064" target="_blank" rel="noopener noreferrer">https://x.com/jarredsumner/status/2118110874108105064</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@jarredsumner）</li>
+      </ul>
+      <h3 id="16-anthropic-工程师不写-prompt写循环">1.6 Anthropic 工程师：不写 prompt，写循环</h3>
+      <ul>
+      <li><strong>核心观点：</strong>转述 Anthropic 一场半小时的演讲：记忆从一份 CLAUDE.md 进化成 agent 自己读写的 memory/ 目录；白天各 agent 把进展写进团队记忆，夜里再跑一轮「dreaming」做核对和整理。演讲给出的数据是一次通过的错误少了 97%，验收快 30%。</li>
+      <li><strong>可行动点：</strong>长期跑的 agent，给它一个可读写的记忆目录，并定时做一次整理，而不是只靠对话上下文。数据来自演讲转述，未见原始论文。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/huxlab/status/2118012171988955165" target="_blank" rel="noopener noreferrer">https://x.com/huxlab/status/2118012171988955165</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@huxlab）</li>
+      </ul>
+      <h3 id="17-其他模型与平台动态">1.7 其他模型与平台动态</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Kimi K3.1 Pro 权重已上 Hugging Face（<code>moonshotai/Kimi-K3.1-Pro</code>）；Cognition 公布 SWE-2 Flash，激活参数 12B，SWE-Bench Pro Hard 89.9，接近自家旗舰 90.6（数据来自转述）；Google AI Studio 发布面向生产的 Computer Use，每步操作前输出结构化的 reasoning 和 intent，并在 API 层内置 safety_decision。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/yangleiocx3/status/2118124094268846300" target="_blank" rel="noopener noreferrer">https://x.com/yangleiocx3/status/2118124094268846300</a> ；<a href="https://x.com/ChuckBass14291/status/2118106775916625973" target="_blank" rel="noopener noreferrer">https://x.com/ChuckBass14291/status/2118106775916625973</a> ；<a href="https://x.com/ChuckBass14291/status/2118105304802189721" target="_blank" rel="noopener noreferrer">https://x.com/ChuckBass14291/status/2118105304802189721</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@yangleiocx3、@ChuckBass14291）</li>
+      </ul>
+      <hr>
+      <h2 id="2-中文ai落地独立开发一人公司opc超级个体">2. 中文AI落地/独立开发/一人公司(OPC)/超级个体</h2>
+      <h3 id="21-范凯不同模型的思考档位最佳实践">2.1 范凯：不同模型的思考档位最佳实践</h3>
+      <ul>
+      <li><strong>核心观点：</strong>同一个模型开什么思考档位同样重要。他的实测结论：简单任务用 DeepSeek High（开 Max 也不会更聪明）；复杂任务用 GPT-6.1 Sol High，性价比最高；超级复杂任务用 GPT-6 Astra，必须开 xhigh/max，否则 Astra 会自己降档甚至不思考。另一条帖称 GPT-6.2 Astra 在 xhigh 下设计课程体系明显好于 Opus 5.5。约 1.5 万和 2.2 万浏览。</li>
+      <li><strong>可行动点：</strong>把常用任务按难度分三档，给每档固定模型和思考档位，写进自己的工作说明，不要一律开最高档。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2117827477708185969" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2117827477708185969</a> ；<a href="https://x.com/fankaishuoai/status/2117996086891835489" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2117996086891835489</a></li>
+      <li><strong>来源标注：</strong>核心 KOL（范凯 @fankaishuoai）</li>
+      </ul>
+      <h3 id="22-范凯节省-grok-bot-额度的-6-条做法">2.2 范凯：节省 Grok Bot 额度的 6 条做法</h3>
+      <ul>
+      <li><strong>核心观点：</strong>重活交给本地 agent（他开源的 grokbot-local-agent），长程任务只让云端负责规划、交给本地执行（agent-relay）；定时任务尽量写成 Python 脚本执行；闲聊用普通聊天客户端，结论成形再一次性贴进来；不要开 Bot 聊天室；每个 Bot 只承担一个岗位，别把所有事塞给一个总管 Bot。约 1.1 万浏览。</li>
+      <li><strong>关键方法/工具：</strong>另一条：做好看的网站，先找几个设计好的站让 agent 把风格抽成 design.md，做完换另一个模型按同一份标准核验前端。</li>
+      <li><strong>可行动点：</strong>这条和本简报自己的运行方式直接相关：每天固定的检索和解析步骤可以脚本化，减少每次让 AI 从头执行。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2117840211468275823" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2117840211468275823</a> ；<a href="https://x.com/fankaishuoai/status/2117982660429816077" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2117982660429816077</a></li>
+      <li><strong>来源标注：</strong>核心 KOL（范凯 @fankaishuoai）</li>
+      </ul>
+      <h3 id="23-亦仁未来绝大多数生意都是包着-agent-皮卖-token">2.3 亦仁：「未来绝大多数生意，都是包着 Agent 皮卖 Token」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>一句话，约 1.5 万浏览。对照 @Svwang1 同日的观点：卖 token 时如果不掌握定价权，和卖口罩、卖猪肉一样，可能突然破产。</li>
+      <li><strong>可行动点：</strong>做 agent 产品时算清两件事：上游 token 成本你控制不了，那么你的定价权来自哪里（数据、工作流、渠道）。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/yiren_ai/status/2117976756691128548" target="_blank" rel="noopener noreferrer">https://x.com/yiren_ai/status/2117976756691128548</a> ；<a href="https://x.com/Svwang1/status/2118017271708922257" target="_blank" rel="noopener noreferrer">https://x.com/Svwang1/status/2118017271708922257</a></li>
+      <li><strong>来源标注：</strong>核心 KOL（亦仁 @yiren_ai）；监控账号池（@Svwang1）</li>
+      </ul>
+      <h3 id="24-opc-案例给-ai-产品拉新的撮合网站单日卖了-2-万多">2.4 OPC 案例：给 AI 产品拉新的撮合网站，单日卖了 2 万多</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Yapie0 的网站单日收入 2 万多（作者自报），模式是帮 AI 产品拉新用户，把 80% 分给做任务的人。他的总结是「最好的生意就是做撮合」。</li>
+      <li><strong>可行动点：</strong>AI 产品获客贵，「拉新任务平台」是一个可验证的需求方向；关键是两边的信任和防刷。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Yapie0/status/2118009807458418688" target="_blank" rel="noopener noreferrer">https://x.com/Yapie0/status/2118009807458418688</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@Yapie0）</li>
+      </ul>
+      <h3 id="25-用-6-只-bot-在闲鱼卖虚拟资料的流水线">2.5 用 6 只 Bot 在闲鱼卖虚拟资料的流水线</h3>
+      <ul>
+      <li><strong>核心观点：</strong>分工依次是：扫闲鱼找能原创的品类（Word/PDF/Excel、字帖、简历）、做原创资料、写标题描述并看竞品价、上架电子资源类目、把资料传网盘建分享链接、绑定商品自动发货。还能叠加网盘拉新：表格卖 1 分钱，每笔网盘那边约 0.45 元差价（作者自报）。</li>
+      <li><strong>可行动点：</strong>适合想练多 Bot 协作的人当练手项目；注意平台对虚拟商品和网盘拉新的规则。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Crypto_146827/status/2117922603763744885" target="_blank" rel="noopener noreferrer">https://x.com/Crypto_146827/status/2117922603763744885</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@Crypto_146827）</li>
+      </ul>
+      <h3 id="26-polsia-创始人用-agent-闭环处理客户反馈">2.6 Polsia 创始人：用 agent 闭环处理客户反馈</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Bencera 称 7 个月做到 2000 万美元年化收入（自报）。流程：客服对话中由 agent 记录每个问题是 bug、需求还是用户困惑；PM agent 每天给工单排优先级；工程 agent 修复；QA 后再让 Codex 复核。只有满足「低等级 bug、不碰支付、不碰新手引导、Codex 同意」时才自动上线，其他都要他本人过目。</li>
+      <li><strong>可行动点：</strong>「自动上线的范围」写成明确规则，再随模型变强逐步放宽，比一次性全放开安全得多。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Bencera/status/2118068888206446632" target="_blank" rel="noopener noreferrer">https://x.com/Bencera/status/2118068888206446632</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@Bencera）</li>
+      </ul>
+      <h3 id="27-手机开发上站教程-魔改飞书录音豆">2.7 手机开发上站教程 &amp; 魔改飞书录音豆</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@KinGao476942 写了一篇用 Grok Bot 多 Bot 分工、只用手机就完成网站开发和上线的教程（约 2.7 万浏览），要点是模拟真实软件团队的分工。@gengdaJ 把飞书录音豆的软件层魔改成自建飞书应用，转写可以接 0.15 元/小时的 StepFun API 或 1 元/小时的豆包实时转写，并开源。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/KinGao476942/status/2117869988145205361" target="_blank" rel="noopener noreferrer">https://x.com/KinGao476942/status/2117869988145205361</a> ；<a href="https://x.com/gengdaJ/status/2117899207764062606" target="_blank" rel="noopener noreferrer">https://x.com/gengdaJ/status/2117899207764062606</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@KinGao476942、@gengdaJ）</li>
+      </ul>
+      <hr>
+      <h2 id="3-ai视频生成工具创意内容">3. AI视频/生成工具/创意内容</h2>
+      <h3 id="31-images-26-做-gif-表情包的实测">3.1 Images 2.6 做 GIF 表情包的实测</h3>
+      <ul>
+      <li><strong>核心观点：</strong>多位创作者当天就上手：@cgnot996 用 GIF 作为参考图生成 GIF，认为动态表情包会井喷；@yangleiocx3 实测编辑时更能保住角色和品牌细节。</li>
+      <li><strong>可行动点：</strong>用「3 列 2 行 6 帧」的精灵图写法控制动作节奏（见 1.2）。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/cgnot996/status/2118137928006472166" target="_blank" rel="noopener noreferrer">https://x.com/cgnot996/status/2118137928006472166</a> ；<a href="https://x.com/yangleiocx3/status/2118132792424906816" target="_blank" rel="noopener noreferrer">https://x.com/yangleiocx3/status/2118132792424906816</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@cgnot996、@yangleiocx3）</li>
+      </ul>
+      <h3 id="32-renoisecinematic-studio-与-avatar-studio">3.2 Renoise：Cinematic Studio 与 Avatar Studio</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Cinematic Studio 用一句话描述场景，agent 先写分镜再逐镜头生成，镜头、光线、运镜和年代可以手动设或交给自动。Avatar Studio 用一张照片生成多语言的说话主持人，每个视频保持同一张脸。另有 Seedance 2.5 做的地铁猫短片（约 2.8 万浏览）并附模板。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/renoiseai/status/2117898614039314754" target="_blank" rel="noopener noreferrer">https://x.com/renoiseai/status/2117898614039314754</a> ；<a href="https://x.com/renoiseai/status/2117917086886641775" target="_blank" rel="noopener noreferrer">https://x.com/renoiseai/status/2117917086886641775</a> ；<a href="https://x.com/renoiseai/status/2117921336207237379" target="_blank" rel="noopener noreferrer">https://x.com/renoiseai/status/2117921336207237379</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@renoiseai）</li>
+      </ul>
+      <h3 id="33-不花钱生视频25d-b-roll-skill">3.3 不花钱生视频：2.5D B-roll skill</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@gbroai 用 Opus 5.5 做了一个生成 2.5D B-roll 的 skill，图用 Codex CLI 生成，再做出 2.5D 运动效果，适合讲人物小传，不需要付费的视频生成。</li>
+      <li><strong>可行动点：</strong>做知识类视频的，可以先用「静图 + 2.5D 视差」替代昂贵的文生视频。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/gbroai/status/2117885693611708606" target="_blank" rel="noopener noreferrer">https://x.com/gbroai/status/2117885693611708606</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@gbroai）</li>
+      </ul>
+      <h3 id="34-ai-写书一年半出版-371-本收入约-100-万美元">3.4 AI 写书：一年半出版 371 本、收入约 100 万美元</h3>
+      <ul>
+      <li><strong>核心观点：</strong>南非言情作者 Coral Hart 被出版社解约后改用 AI 写书（数据来自她在 Reddit 的问答，@foxshuo 整理）。她的流程是先做文风规范、写作手册、设定库、人物表、情节节拍表和节奏图，最后才是大纲；用 AI 监管 AI，主力是 Opus 系列。分发上，每本先做小规模邮件推送，每天能卖 100 美元的书才追加广告。她强调邮件名单是自己的资产，平台读者是「租来的」。约 4.6 万浏览。</li>
+      <li><strong>可行动点：</strong>任何内容生意都可以借鉴「先小流量测试，数据好再加投」和「自有名单优先」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/foxshuo/status/2117971877721505866" target="_blank" rel="noopener noreferrer">https://x.com/foxshuo/status/2117971877721505866</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@foxshuo）</li>
+      </ul>
+      <h3 id="35-提示词美学xiaoxiaodong-的海报提示词">3.5 提示词美学：@xiaoxiaodong 的海报提示词</h3>
+      <ul>
+      <li><strong>核心观点：</strong>连发三组 GPT-image 2.5 + Opus 5.5 的海报提示词（建筑生长在白墙里、雾中发光文字、静物手写烟雾），提示词全文附在帖里。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaoxiaodong/status/2117974572171739265" target="_blank" rel="noopener noreferrer">https://x.com/xiaoxiaodong/status/2117974572171739265</a> ；<a href="https://x.com/xiaoxiaodong/status/2117972457407779231" target="_blank" rel="noopener noreferrer">https://x.com/xiaoxiaodong/status/2117972457407779231</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@xiaoxiaodong）</li>
+      </ul>
+      <hr>
+      <h2 id="4-cryptoweb3投资交易">4. Crypto/Web3/投资/交易</h2>
+      <h3 id="41-中期选举后的大轮动ai-基础设施挨打">4.1 中期选举后的大轮动：AI 基础设施挨打</h3>
+      <ul>
+      <li><strong>核心观点：</strong>道指 +3.03%（+1569 点），标普 +1.58%，纳指 +1.44%；但费城半导体 -3.1%，美光 -7%，CoreWeave 跌约 10%，TSLA -3.32%。布伦特原油 -8.7% 到 94.62 美元，BTC 重回 8 万美元上方。作者的结论是「蓝色浪潮伤的是 AI 链，不是大盘」。</li>
+      <li><strong>可行动点：</strong>持有 AI 基础设施股的，留意民主党控制国会后对数据中心电力和税收优惠的政策变化（见 4.3）。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/jhdxhl/status/2118126698894172339" target="_blank" rel="noopener noreferrer">https://x.com/jhdxhl/status/2118126698894172339</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@jhdxhl）</li>
+      </ul>
+      <h3 id="42-btc油价是这次反弹的线索">4.2 BTC：油价是这次反弹的线索</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@virtualbacon 认为选举后 BTC 上涨与油价跌破 95 美元有关：交易员押注民主党上台后战争结束，油价下降有助于通胀回落。他今年的买入点位是 2 月 6 万、6 月 5.8 万、9 月 7.8 万、上周 7.6 万；隔夜低点 75618 美元后反弹，他给「底部已现」80% 概率，周线收在 80160 以上则升到 85–90%。@APompliano 则认为蓝色浪潮意味着更多印钞，利好 BTC、黄金和土地。</li>
+      <li><strong>可行动点：</strong>把「周线能否收在 80160 上方」作为本周的观察点；这些都是个人判断，不构成建议。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/virtualbacon/status/2118105341225251313" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2118105341225251313</a> ；<a href="https://x.com/virtualbacon/status/2118084206303519071" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2118084206303519071</a> ；<a href="https://x.com/virtualbacon/status/2118049891952042287" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2118049891952042287</a> ；<a href="https://x.com/APompliano/status/2117984431042626018" target="_blank" rel="noopener noreferrer">https://x.com/APompliano/status/2117984431042626018</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@virtualbacon、@APompliano）</li>
+      </ul>
+      <h3 id="43-得州新参议员对-ai-数据中心提三项要求">4.3 得州新参议员对 AI 数据中心提三项要求</h3>
+      <ul>
+      <li><strong>核心观点：</strong>自己承担电力和电网成本、不能推高居民电费；循环用水；建设前取得当地社区认可。他还主张取消大型科技公司的部分税收优惠。范凯则认为 AI 数据中心浪潮本质是美国再工业化，中期选举挡不住。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/mylifeonmystyle/status/2118063743057969152" target="_blank" rel="noopener noreferrer">https://x.com/mylifeonmystyle/status/2118063743057969152</a> ；<a href="https://x.com/fankaishuoai/status/2117999672229056652" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2117999672229056652</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@mylifeonmystyle）；核心 KOL（范凯 @fankaishuoai）</li>
+      </ul>
+      <h3 id="44-币安储备金证明扩到-44-个币种">4.4 币安：储备金证明扩到 44 个币种</h3>
+      <ul>
+      <li><strong>核心观点：</strong>继 63 亿美元被盗事件后，何一宣布新的储备金证明（PoR）快照（2026-11-04 00:00 UTC），覆盖币种从 10 个增加到 44 个，完整零知识证明约需 50–60 小时生成，之后用户可自行验证余额是否至少 1:1 有储备。</li>
+      <li><strong>可行动点：</strong>在币安有资产的，证明生成后去 PoR 页面自己验证一次。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/heyibinance/status/2118024848803057670" target="_blank" rel="noopener noreferrer">https://x.com/heyibinance/status/2118024848803057670</a> ；<a href="https://x.com/bitfish/status/2117939181653729595" target="_blank" rel="noopener noreferrer">https://x.com/bitfish/status/2117939181653729595</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@heyibinance、@bitfish）</li>
+      </ul>
+      <h3 id="45-k-型流动性与缩圈逻辑">4.5 K 型流动性与「缩圈」逻辑</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@fupenglondon 认为现在流动性分层比方向判断更重要：科技和 AI 融资宽松，传统行业和利率敏感资产承压；资金先从高弹性、对流动性最敏感的资产撤出，往确定性最高的资产集中，而不是简单地「从币圈跑去美股」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fupenglondon/status/2117883298047475856" target="_blank" rel="noopener noreferrer">https://x.com/fupenglondon/status/2117883298047475856</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@fupenglondon）</li>
+      </ul>
+      <h3 id="46-工具hyperliquid-头部交易员追踪站">4.6 工具：Hyperliquid 头部交易员追踪站</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@iamyourchaos 重做了追踪站，覆盖 363 个地址（37 个已关联 X 账号），有交易员排行、大额开平仓流水与多空共识卡片、HIP-3 部署方成交量和 OI 对比，数据来自 Hyperdash 和 DefiLlama。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/iamyourchaos/status/2118143691793781215" target="_blank" rel="noopener noreferrer">https://x.com/iamyourchaos/status/2118143691793781215</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@iamyourchaos）</li>
+      </ul>
+      <hr>
+      <h2 id="5-思想家原则独立思考">5. 思想家/原则/独立思考</h2>
+      <h3 id="51-bruce-qin世界不会以你的个人意志为转移">5.1 Bruce Qin：世界不会以你的个人意志为转移</h3>
+      <ul>
+      <li><strong>核心观点：</strong>把内观（如实观察）和荣格的「投射」放在一起：我们习惯用自我认知给外界加滤镜，无论是感情还是看盘。「趋势形成后方向不轻易改变」。</li>
+      <li><strong>可行动点：</strong>复盘交易或决策时，单独写一栏「我当时希望它怎样」，和「它实际怎样」对照。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/qzhxjhj/status/2118055993611620638" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2118055993611620638</a></li>
+      <li><strong>来源标注：</strong>核心 KOL（Bruce Qin @qzhxjhj）</li>
+      </ul>
+      <h3 id="52-用-ai-逃避真正的问题">5.2 用 AI 逃避真正的问题</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@oran_ge 转述一个开发者被 Claude 和 Codex「搞到快破产」：永远有下一个功能可以做，每次都觉得很有产出，却一直不把产品拿给别人看。后来逼自己发冷邮件，才真正带来用户。@oran_ge 另一条：Uber 万圣节周 3.2 亿订单里，通过 agent 完成的只有 500 单外卖和 4 次打车。</li>
+      <li><strong>可行动点：</strong>给自己定一个硬规则，比如每做完一个功能就至少联系 5 个潜在用户。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/oran_ge/status/2118117429201220057" target="_blank" rel="noopener noreferrer">https://x.com/oran_ge/status/2118117429201220057</a> ；<a href="https://x.com/oran_ge/status/2118105193074356384" target="_blank" rel="noopener noreferrer">https://x.com/oran_ge/status/2118105193074356384</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@oran_ge）</li>
+      </ul>
+      <h3 id="53-让-ai-列出替我定了哪些事">5.3 让 AI 列出「替我定了哪些事」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@runes_leo 读 Addy 的文章后加了两条 AI 规则：多步任务做完后，单独列出它替你定了什么（默认值、没做的、没核实的前提）；AI 找你拍板前，先查你以前对同类事怎么定的，有先例就照办并注明依据。</li>
+      <li><strong>可行动点：</strong>可以直接抄进自己的 agent 说明。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/runes_leo/status/2117864761857806549" target="_blank" rel="noopener noreferrer">https://x.com/runes_leo/status/2117864761857806549</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@runes_leo）</li>
+      </ul>
+      <h3 id="54-赫拉利智人之上信息首先是连接不是求真">5.4 赫拉利《智人之上》：信息首先是连接，不是求真</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@bearliu 读后分享：宗教神话、国家叙事和阴谋论都能让陌生人协调行动；印刷机既传播科学也传播猎巫手册；AI 是信息网络里的「新行动者」，推荐算法发现愤怒留人，就会在没人下令时把社会往那边推。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/bearliu/status/2118132690251575364" target="_blank" rel="noopener noreferrer">https://x.com/bearliu/status/2118132690251575364</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@bearliu）</li>
+      </ul>
+      <h3 id="55-开放模型经济谁来付下一代模型的研发费">5.5 开放模型经济：谁来付下一代模型的研发费？</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dongxi_nlp 推荐 Nathan Lambert 的讨论：闭源前沿公司靠垂直整合让收入反哺训练；开放模型的价值链更分散，推理平台、应用和中转站都赚到钱，但下一代研发成本没人承担。未来公司的三类资产是数据、工作流和模型。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dongxi_nlp/status/2118099674519552191" target="_blank" rel="noopener noreferrer">https://x.com/dongxi_nlp/status/2118099674519552191</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@dongxi_nlp）</li>
+      </ul>
+      <hr>
+      <h2 id="6-身心整合终身学习超级个体补充">6. 身心整合/终身学习/超级个体补充</h2>
+      <h3 id="61-bruce-qin心脏意识与大脑是个戏精">6.1 Bruce Qin：心脏、意识与「大脑是个戏精」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>一次专注听心跳时出现「眼睛不见了」的体验，引出大脑的「解释器」（加扎尼加）：大脑受不了不知道原因，会几秒内编一个故事，而且挑最吓人的那个。身体先慌，大脑才说「我害怕」。</li>
+      <li><strong>可行动点：</strong>睡前把手放在胸口听一分钟心跳；下次焦虑时先问自己「这是事实，还是大脑编的故事」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/qzhxjhj/status/2118111319396417905" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2118111319396417905</a></li>
+      <li><strong>来源标注：</strong>核心 KOL（Bruce Qin @qzhxjhj）</li>
+      </ul>
+      <h3 id="62-身心修复局让-agent-操作本机桌面的实测心得">6.2 身心修复局：让 agent 操作本机桌面的实测心得</h3>
+      <ul>
+      <li><strong>核心观点：</strong>他在 Windows 上用 LCU（走无障碍树）让 Grok Bot 直接操作本机桌面：适合办公软件和系统窗口；但剪映这类 Electron 自绘界面在无障碍树上经常是「瞎的」，拖拽会失败。每次推理都烧额度，把稳定步骤写成脚本回放才省得下来。Mac 上的 agent-desktop 是另一条路线（直接注入鼠标键盘）。</li>
+      <li><strong>可行动点：</strong>先认清自己的本机环境再选方案，别以为装个开源工具就能用。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/MindfulReturn/status/2118143969649463488" target="_blank" rel="noopener noreferrer">https://x.com/MindfulReturn/status/2118143969649463488</a></li>
+      <li><strong>来源标注：</strong>核心 KOL（身心修复局 @MindfulReturn）</li>
+      </ul>
+      <h3 id="63-大学生常见的-15-个问题">6.3 大学生常见的 15 个问题</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@hocyzon 列了 15 条，例如「知道很多道理却很少改变行为」「依赖 AI 完成任务，却分不清完成一件事和掌握一项能力」「觉得自己一直很忙，却说不清积累了什么」。</li>
+      <li><strong>可行动点：</strong>挑出最戳你的一条，作为本周复盘的主题。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/hocyzon/status/2117900953882071154" target="_blank" rel="noopener noreferrer">https://x.com/hocyzon/status/2117900953882071154</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@hocyzon）</li>
+      </ul>
+      <h3 id="64-好内容也是一个好产品">6.4 好内容也是一个好产品</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Nenlyonis 回顾自己 2023 年按做付费课程的标准打磨了两个月的 Stable Diffusion 教程，至今全平台播放超过 2000 万。商单的排期等不了两个月，要对数据和甲方负责，离观众反而更远。他现在少接商单，把精力收束在真正「好」的东西上。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Nenlyonis/status/2118038671953948957" target="_blank" rel="noopener noreferrer">https://x.com/Nenlyonis/status/2118038671953948957</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@Nenlyonis）</li>
+      </ul>
+      <h3 id="65-健康与习惯">6.5 健康与习惯</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@m_goes_distance：诺和诺德 Wegovy 口服片 1 月上市以来美国处方 800 万张，占新减重口服处方约 80%，注射版美国销量下滑 13%，1 月起注射版美国标价约降一半到 675 美元/月。@AaronYiaazw 分享自己一年每天服用十几种补剂的经验（无广）。@alexeixbt：每天刷 3 小时手机，一年就是 1095 小时在「练习分心」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/m_goes_distance/status/2118030128684937404" target="_blank" rel="noopener noreferrer">https://x.com/m_goes_distance/status/2118030128684937404</a> ；<a href="https://x.com/AaronYiaazw/status/2117973555480789037" target="_blank" rel="noopener noreferrer">https://x.com/AaronYiaazw/status/2117973555480789037</a> ；<a href="https://x.com/alexeixbt/status/2118000353253654866" target="_blank" rel="noopener noreferrer">https://x.com/alexeixbt/status/2118000353253654866</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@m_goes_distance、@AaronYiaazw、@alexeixbt）</li>
+      </ul>
+      <hr>
+      <h2 id="7-媒体工具其他">7. 媒体/工具/其他</h2>
+      <h3 id="71-grok-bot-可以打电话了">7.1 Grok Bot 可以打电话了</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@bot 官方宣布 Grok Bot 可以拨打电话（约 118 万浏览）：订位、查订单、替你在客服线上排队。@ericzakariasson 称已让它打电话给航空公司改签。@XFreeze 还发现预发布版本在测试用量账单面板（按个人、定时任务、Bot 互聊、群聊拆分用量）和分享内容披露界面。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/bot/status/2118043939592942052" target="_blank" rel="noopener noreferrer">https://x.com/bot/status/2118043939592942052</a> ；<a href="https://x.com/ericzakariasson/status/2118097345829052427" target="_blank" rel="noopener noreferrer">https://x.com/ericzakariasson/status/2118097345829052427</a> ；<a href="https://x.com/XFreeze/status/2118036589494636679" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2118036589494636679</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@bot、@ericzakariasson、@XFreeze）</li>
+      </ul>
+      <h3 id="72-chatgpt-周活-12-亿搜索量接近-google-的-20">7.2 ChatGPT 周活 12 亿，搜索量接近 Google 的 20%</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@vista8 整理 Big Technology 报道：过去两个月 ChatGPT 新增 2 亿用户，周活 12 亿；语音模式周活 2.5 亿；搜索量接近 Google 的 20%。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/vista8/status/2118007123590434850" target="_blank" rel="noopener noreferrer">https://x.com/vista8/status/2118007123590434850</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@vista8）</li>
+      </ul>
+      <h3 id="73-google-在五国推自愿离职补偿">7.3 Google 在五国推自愿离职补偿</h3>
+      <ul>
+      <li><strong>核心观点：</strong>路透社报道，Google 从 6 月起在加拿大、法国、德国、日本和瑞士向部分员工提供自愿离职补偿，每工作一年一个月工资、最多 12 个月；DeepMind 和 Google Cloud 不在其中。上周微软也向 6 万名员工提供了类似方案。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2118064749011194009" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2118064749011194009</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@dotey）</li>
+      </ul>
+      <h3 id="74-值得收藏的开源工具">7.4 值得收藏的开源工具</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Cicada，原生 macOS 实时语音翻译和会议助手，支持 Zoom、腾讯会议、飞书的双语字幕和纪要，还能通过虚拟麦克风把你的话翻译后传给会议软件；一个用 Rust + GPUI 绘制、兼容飞书的开源文档编辑器；@dotey 分享的 skill 逆向技巧：先让模型用某个 skill 完成一个简单作品，再让它「做一个输入输出一样的 skill」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2118052017755005210" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2118052017755005210</a> ；<a href="https://x.com/dotey/status/2118035176081015047" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2118035176081015047</a> ；<a href="https://x.com/dotey/status/2118146071020888193" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2118146071020888193</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@dotey）</li>
+      </ul>
+      <h3 id="75-qwen-code-的令牌缓存只对-api-key-登录生效">7.5 Qwen Code 的令牌缓存只对 API Key 登录生效</h3>
+      <ul>
+      <li><strong>核心观点：</strong>按官方文档，使用 API Key 认证时 Qwen Code 自动做令牌缓存，OAuth 登录不显示缓存信息；输入 <code>/stats</code> 能看到多少输入令牌来自缓存。想更省，还要缩小常驻上下文。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/swordBluesy/status/2118095648428081235" target="_blank" rel="noopener noreferrer">https://x.com/swordBluesy/status/2118095648428081235</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@swordBluesy）</li>
+      </ul>
+      <h3 id="76-x-网页版重写首帖显示从-239-秒降到-27-秒">7.6 X 网页版重写，首帖显示从 23.9 秒降到 2.7 秒</h3>
+      <ul>
+      <li><strong>核心观点：</strong>慢网速下旧版显示第一条帖要 23.9 秒，新版 2.7 秒（@XFreeze 转述）。@petersellis 加入 X 后也提到团队把服务性能放在首位。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/XFreeze/status/2118102878883881442" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2118102878883881442</a> ；<a href="https://x.com/petersellis/status/2118060634139246947" target="_blank" rel="noopener noreferrer">https://x.com/petersellis/status/2118060634139246947</a></li>
+      <li><strong>来源标注：</strong>监控账号池（@XFreeze、@petersellis）</li>
+      </ul>
+      <p class="brief-end">
+        <a href="2026-11-04.html">较早一天</a>
+        <a href="../index.html">返回目录</a>
+        <a href="2026-11-05.md">Markdown 原文</a>
+      </p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>凯旋 · AI圈每日简报</p>
+    <p><a href="https://github.com/kaixuan94/ai-daily-briefing">GitHub 仓库</a></p>
+  </footer>
+</body>
+</html>
