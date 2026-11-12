@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161310" media="(prefers-color-scheme: dark)">
+  <title>AI圈每日简报 · 2026-11-12 — 凯旋</title>
+  <meta name="description" content="2026-11-12 AI圈每日简报，7 个分类，29 条精选。">
+  <link rel="canonical" href="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-12.html">
+  <meta property="og:title" content="AI圈每日简报 · 2026-11-12 — 凯旋">
+  <meta property="og:description" content="2026-11-12 AI圈每日简报，7 个分类，29 条精选。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-12.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">简</span>
+        <span>
+          <span class="brand-name">凯旋</span>
+          <span class="brand-sub">AI圈每日简报</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="站点">
+        <a href="../index.html">目录</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+    <article class="brief">
+      <h1 id="ai圈每日简报-2026-11-12">AI圈每日简报 · 2026-11-12</h1>
+      <blockquote>
+      <p>时间窗：2026-11-11 09:18 至 2026-11-12 09:18（香港时间）
+      监控范围：账号池 <code>ai_monitor_accounts.md</code>（304 个去重手柄，含 5 位核心 KOL）。300 个手柄按 15 人一批分 20 批做 <code>from:</code> 检索（排除转推和回复），其中 10 个高频批次额外翻了 1 页；5 位核心 KOL 单独检索（含回复）。去重后约 770 帖进入候选，按互动和收藏筛出约 80 条重点帖阅读。
+      覆盖说明：本期翻页比前几期少，部分高频批次只覆盖到窗口较近的 12–18 小时，较早时段可能漏掉少量帖子（见附录）。
+      核心 KOL 覆盖：Sac @Saccc_c（3 条原创入报：Higgsfield 营收、Agent「下载文件夹投毒」安全提醒、vibe gaming）；范凯 @fankaishuoai（Coding Agent 评测、garbage in/out 入报）；亦仁 @yiren_ai（1 条原创「活 10 年送 50 年」入报）；身心修复局 @MindfulReturn（庄子「心斋」与焦虑一条入报，其余为政治八卦向 @grok 提问，未收录）；Bruce Qin @qzhxjhj（窗口内仅 1 条回复，无达标条目）。</p>
+      </blockquote>
+      <h2 id="今日三件事">今日三件事</h2>
+      <ol>
+      <li><strong>Google 推出 Gemini Decisions API：</strong>配套新模型 Gemini Decision 1，不生成文本，只对「封闭选项」打分，一次最多 1,000 个问题，支持文本、图片、音频、视频和 PDF。宝玉整理的价格：输入每百万 Token $0.1，输出不收费。适合路由、审核、分类这类「只要一个判断」的调用。</li>
+      <li><strong>Grok Bot 1.0 正式版：</strong>从 beta 进入 1.0，主打「多人 AI 队友」：可共享 Bot、在 Slack/Teams 里协作、拉进会议；前一天已支持加入 Tailscale 内网访问私有 MCP。同期 Amp 推出常驻沙盒 Boxes，wesbos 推荐用自托管 Executor 统一管理 MCP。</li>
+      <li><strong>Coding Agent 选型 + 安全：</strong>范凯的评测（未跑完）显示 Codex CLI 通过率最高且最省 token，Pi Agent 第二，Claude Code 依旧最耗 token；Sac 提醒不要在「下载」文件夹里直接启动 Claude Code / Codex，已有通过下载文件投毒的攻击案例。</li>
+      </ol>
+      <nav class="toc" aria-label="目录"><h2 id="目录">目录</h2>
+      <ol>
+      <li><a href="#1-ai公司官方核心研究者与工程师">AI公司/官方/核心研究者与工程师</a></li>
+      <li><a href="#2-中文ai落地独立开发一人公司opc超级个体">中文AI落地/独立开发/一人公司(OPC)/超级个体</a></li>
+      <li><a href="#3-ai视频生成工具创意内容">AI视频/生成工具/创意内容</a></li>
+      <li><a href="#4-cryptoweb3投资交易">Crypto/Web3/投资/交易</a></li>
+      <li><a href="#5-思想家原则独立思考">思想家/原则/独立思考</a></li>
+      <li><a href="#6-身心整合终身学习超级个体补充">身心整合/终身学习/超级个体补充</a></li>
+      <li><a href="#7-媒体工具其他">媒体/工具/其他</a></li>
+      </ol></nav>
+      <hr>
+      <h2 id="1-ai公司官方核心研究者与工程师">1. AI公司/官方/核心研究者与工程师</h2>
+      <h3 id="11-gemini-decisions-api只做判断不写回答">1.1 Gemini Decisions API：只做判断、不写回答</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@sundarpichai 宣布在 Google AI Studio 上线 Gemini Decisions API，模型为 Gemini Decision 1。它不逐 token 生成文本，而是针对封闭选项打分，单次最多 1,000 个问题，输入可以是文本、图片、音频、视频和 PDF。@dotey 的中文整理：返回每道题的答案和置信度，输入每百万 Token $0.1，输出免费；典型场景是客服消息分组、决定交给便宜模型还是推理模型、内容审核。@dongxi_nlp 补充了另一个用法：用 decision model 识别并修正文档解析错误，再把干净数据交给下游 Agent。</li>
+      <li><strong>关键方法/工具：</strong>Gemini Decisions API、Gemini Decision 1；「Agent 路由 / 审核 / 分类 / 文档质检」四类场景。</li>
+      <li><strong>可行动点：</strong>把自家 Agent 里「让大模型写一段话再解析出选项」的调用找出来，改成 Decisions API 一次批量判断，对比成本、延迟和解析失败率；路由时直接用置信度设阈值。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/sundarpichai/status/2120581155078729728" target="_blank" rel="noopener noreferrer">https://x.com/sundarpichai/status/2120581155078729728</a> ；<a href="https://x.com/dotey/status/2120647659388031454" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2120647659388031454</a> ；<a href="https://x.com/dongxi_nlp/status/2120579654126108708" target="_blank" rel="noopener noreferrer">https://x.com/dongxi_nlp/status/2120579654126108708</a></li>
+      <li><strong>来源标注：</strong>【账号池】@sundarpichai、@dotey、@dongxi_nlp</li>
+      </ul>
+      <h3 id="12-grok-bot-10多人-ai-队友-内网接入">1.2 Grok Bot 1.0：多人 AI 队友 + 内网接入</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@bot 发布 Grok Bot 1.0：可共享的 AI 队友，能在 Slack 和 Teams 里协作、被拉进会议，并持续学习。@XFreeze 和 @AlexFinn 的拆解要点：多人共用的团队 Bot、Bot 之间互相协作、能加入视频会议并据此行动；另有提示注入警告（页面或消息里藏了指令时会提示并拒绝执行），以及前一天上线的 Tailscale 内网接入（访问私有 MCP、内部应用和自托管工具）。同日还有和 Gopuff 合作的端到端下单演示。</li>
+      <li><strong>关键方法/工具：</strong>团队共享 Bot、会议接入、Tailscale tailnet、提示注入告警。</li>
+      <li><strong>可行动点：</strong>如果你在用多个 Bot 分工（如简报、BTC 日报），可以考虑给团队共享一个「主管」Bot 统一派活；私有工具优先走 tailnet，不要暴露到公网。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/bot/status/2120582957782200586" target="_blank" rel="noopener noreferrer">https://x.com/bot/status/2120582957782200586</a> ；<a href="https://x.com/XFreeze/status/2120587914098905165" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2120587914098905165</a> ；<a href="https://x.com/AlexFinn/status/2120591155503219175" target="_blank" rel="noopener noreferrer">https://x.com/AlexFinn/status/2120591155503219175</a> ；<a href="https://x.com/XFreeze/status/2120509000932598006" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2120509000932598006</a> ；<a href="https://x.com/XFreeze/status/2120359934462402894" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2120359934462402894</a></li>
+      <li><strong>来源标注：</strong>【账号池】@bot、@XFreeze、@AlexFinn</li>
+      </ul>
+      <h3 id="13-alphagenome-2预测-dna-变异在特定细胞类型里的影响">1.3 AlphaGenome 2：预测 DNA 变异在特定细胞类型里的影响</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@sundarpichai 介绍 AlphaGenome 2，可以预测 DNA 变异对具体细胞类型（如心肌细胞 vs 免疫细胞）的影响，用来寻找疾病的细胞层面驱动因素。@m_goes_distance 把 Google 的生物栈总结为逐层叠加：AlphaFold（蛋白质结构）→ AlphaGenome（DNA 功能）→ AlphaGenome 2（在哪种细胞里发生）→ Isomorphic（药物设计）。</li>
+      <li><strong>关键方法/工具：</strong>AlphaGenome 2；「分层建模生物学」的框架。</li>
+      <li><strong>可行动点：</strong>做 AI + 医疗/生物方向的，可以按这五层梳理自己处在哪一层、上下游数据从哪来。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/sundarpichai/status/2120553080232329324" target="_blank" rel="noopener noreferrer">https://x.com/sundarpichai/status/2120553080232329324</a> ；<a href="https://x.com/m_goes_distance/status/2120577633054568601" target="_blank" rel="noopener noreferrer">https://x.com/m_goes_distance/status/2120577633054568601</a></li>
+      <li><strong>来源标注：</strong>【账号池】@sundarpichai、@m_goes_distance</li>
+      </ul>
+      <h3 id="14-百度文心-55-flash-preview-开源编程-agent-3d">1.4 百度文心 5.5 Flash Preview 开源：编程 + Agent + 3D</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaohu 介绍百度发布开源模型文心 5.5 Flash Preview，重点升级编程和 Agent 能力：能用代码排镜头、卡音乐、调用渲染工具出成片，也能在 Blender 里做可编辑的 3D 建模；演示是基于虚幻引擎 5.8 做一款第三人称武侠游戏《云岫行》。</li>
+      <li><strong>关键方法/工具：</strong>文心 5.5 Flash Preview（开源）、Blender、虚幻引擎。</li>
+      <li><strong>可行动点：</strong>需要国产可自部署模型做 3D/视频管线的，可以把它加进候选，和 DeepSeek V4.1 Flash 一起做小规模对比。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaohu/status/2120500117342175364" target="_blank" rel="noopener noreferrer">https://x.com/xiaohu/status/2120500117342175364</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaohu</li>
+      </ul>
+      <h3 id="15-工程方法ddd-统一语言-团队共享-skills">1.5 工程方法：DDD 统一语言 + 团队共享 Skills</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@mattpocockuk 说他的课程里最让学员震撼的不是 Agent，而是领域驱动设计（DDD）：先建立一套「统一语言」，和 Agent 对话时用它，再把代码重构成用这套语言命名。他的延伸观点：如果你能用清晰、一致的语言描述业务流程，自动化软件就已经做了一半。@housecor 主张少用个人 Skills、多用团队共享 Skills，避免流程碎片化和开发效率差异过大。@kentcdodds 提醒：你的电脑上有多少把密钥，一个误解指令的 Agent 就能拿来搞垮生产环境。</li>
+      <li><strong>关键方法/工具：</strong>DDD ubiquitous language、团队共享 skill 库、最小权限密钥。</li>
+      <li><strong>可行动点：</strong>给你的项目写一页「术语表」放进仓库，让 Agent 每次先读；把个人好用的 skill 提交到共享目录；检查本机 <code>.env</code> 和 CLI 登录里有没有生产库写权限。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/mattpocockuk/status/2120503390333768170" target="_blank" rel="noopener noreferrer">https://x.com/mattpocockuk/status/2120503390333768170</a> ；<a href="https://x.com/mattpocockuk/status/2120606575819956439" target="_blank" rel="noopener noreferrer">https://x.com/mattpocockuk/status/2120606575819956439</a> ；<a href="https://x.com/housecor/status/2120525804647919835" target="_blank" rel="noopener noreferrer">https://x.com/housecor/status/2120525804647919835</a> ；<a href="https://x.com/kentcdodds/status/2120548188730069301" target="_blank" rel="noopener noreferrer">https://x.com/kentcdodds/status/2120548188730069301</a></li>
+      <li><strong>来源标注：</strong>【账号池】@mattpocockuk、@housecor、@kentcdodds</li>
+      </ul>
+      <h3 id="16-agent-基础设施amp-boxesexecutor-统一-mcplangfuse-网关">1.6 Agent 基础设施：Amp Boxes、Executor 统一 MCP、Langfuse 网关</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dingyi 介绍 Amp 新出的 Boxes（常驻沙盒，给网站、仪表盘、小工具和长驻服务用，最小配置约每月 18 美元，可设定夜间关机），并认为 Grok Bot 选择接 Tailscale 是因为常驻沙盒成本太高。@wesbos 用 @RhysSullivan 的 Executor：应用只连一次，所有机器和 Agent 通过一个 MCP 连接访问，自托管在 tailnet 内。@dingyi 另提到 Langfuse 推出 AI Gateway 公测，认为各家最终都走向「中转站和网关」。</li>
+      <li><strong>关键方法/工具：</strong>Amp Boxes、Executor（MCP 聚合）、Langfuse AI Gateway、Tailscale。</li>
+      <li><strong>可行动点：</strong>多台机器 + 多个 Agent 的，可以试 Executor 把 MCP 认证集中一处管理；常驻小服务对比 Boxes 和自己的 VPS 成本。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dingyi/status/2120471858055381482" target="_blank" rel="noopener noreferrer">https://x.com/dingyi/status/2120471858055381482</a> ；<a href="https://x.com/wesbos/status/2120573665301668168" target="_blank" rel="noopener noreferrer">https://x.com/wesbos/status/2120573665301668168</a> ；<a href="https://x.com/dingyi/status/2120653800189112667" target="_blank" rel="noopener noreferrer">https://x.com/dingyi/status/2120653800189112667</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dingyi、@wesbos</li>
+      </ul>
+      <hr>
+      <h2 id="2-中文ai落地独立开发一人公司opc超级个体">2. 中文AI落地/独立开发/一人公司(OPC)/超级个体</h2>
+      <h3 id="21-范凯coding-agent-评测进行中codex-cli-领先">2.1 范凯：Coding Agent 评测（进行中）——Codex CLI 领先</h3>
+      <ul>
+      <li><strong>核心观点：</strong>范凯正在跑 Coding Agent 评测（尚未跑完），目前综合排名：① Codex CLI 编程任务通过率最高、token 最少；② Pi Agent 通过率第二、token 略多；Claude Code 一如既往非常耗 token；DeepSeek Harness 效果一般。他还单独比较了各家跑 DeepSeek V4.1 Flash 的表现（详见原帖图表）。同日他表示 Gemini 在 Agent 方面能力较差，并坚持「本地自部署才是王道」。</li>
+      <li><strong>关键方法/工具：</strong>Codex CLI、Pi Agent、Claude Code、DeepSeek Harness、DeepSeek V4.1 Flash。</li>
+      <li><strong>可行动点：</strong>token 预算紧的日常编码优先试 Codex CLI；想换便宜模型时，用 Pi Agent 挂 DeepSeek V4.1 Flash 做对照；等他的完整评测出来再定主力。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2120464529742328103" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2120464529742328103</a> ；<a href="https://x.com/fankaishuoai/status/2120481656754917776" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2120481656754917776</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@fankaishuoai 范凯</li>
+      </ul>
+      <h3 id="22-sac别在下载文件夹启动-claude-code-codex">2.2 Sac：别在「下载」文件夹启动 Claude Code / Codex</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Sac 提醒：经常在「下载」文件夹里启动 Claude Code 和 Codex 的人要注意。起因是 10 月底安全机构 Forever Security 披露的攻击：网页下载的文件混进下载目录，Agent 在该目录工作时读到并执行了恶意内容。原帖末尾附有他整理的安全审查提示词和自查方法（帖子为长文，需点开原帖看全文）。他同日还分享了 secvibe code 链接。</li>
+      <li><strong>关键方法/工具：</strong>专用工作目录、定期安全自查提示词、secvibe code。</li>
+      <li><strong>可行动点：</strong>给 Agent 建一个干净的工作目录，不要在 Downloads 或桌面直接启动；每周让 Agent 按 Sac 的提示词做一次本机安全审查。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Saccc_c/status/2120396608936505837" target="_blank" rel="noopener noreferrer">https://x.com/Saccc_c/status/2120396608936505837</a> ；<a href="https://x.com/Saccc_c/status/2120461481989075367" target="_blank" rel="noopener noreferrer">https://x.com/Saccc_c/status/2120461481989075367</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@Saccc_c Sac</li>
+      </ul>
+      <h3 id="23-一人公司案例小红书测试类产品6-元-ios-app微信自动化">2.3 一人公司案例：小红书测试类产品、6 元 iOS App、微信自动化</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Crypto_146827 观察到小红书上卖天赋、塔罗、命理、城市匹配、职业方向等测试的账号，单价不到 2 元，卖出几万到十几万份；很多人用 Codex 同时做网页版和移动端测试产品，配卡密，用直播、视频和图文笔记引流挂车卖。@xmglab 花 688 元注册苹果开发者，用 Claude Code 闭关 3 周做出 iOS App MaskX，卖 6 元永久买断（要卖 115 份才回本开发者年费）。@gengdaJ 分享了硬件玩家的微信自动化思路：独立盒子装 Windows 只跑微信，主机用 OCR 识别 + 知识库生成回复再写回。</li>
+      <li><strong>关键方法/工具：</strong>Codex 快速做测试类 H5 + 卡密；Claude Code 开发 iOS；OCR + 知识库 + 独立设备做 IM 自动化。</li>
+      <li><strong>可行动点：</strong>低价测试类产品验证门槛很低，可以用一个周末做一个 H5 测试 + 小红书笔记试水；做 App 前先算清回本份数。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Crypto_146827/status/2120548566272000408" target="_blank" rel="noopener noreferrer">https://x.com/Crypto_146827/status/2120548566272000408</a> ；<a href="https://x.com/xmglab/status/2120502302037393451" target="_blank" rel="noopener noreferrer">https://x.com/xmglab/status/2120502302037393451</a> ；<a href="https://x.com/gengdaJ/status/2120491932917141711" target="_blank" rel="noopener noreferrer">https://x.com/gengdaJ/status/2120491932917141711</a></li>
+      <li><strong>来源标注：</strong>【账号池】@Crypto_146827、@xmglab、@gengdaJ</li>
+      </ul>
+      <h3 id="24-开源工具piclawmagpie录音豆客户端">2.4 开源工具：PiClaw、Magpie、录音豆客户端</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps 介绍开源项目 PiClaw：不重写 Agent 内核，而是以 Pi Agent 为核心、靠插件搭出一套 Web 工作台，做成类 Grok Bot 的个人助手。@runes_leo 介绍 yetone 的开源菜单栏工具 Magpie：让 Claude Code、Codex 随意换模型，额度用完自动切账号；其开发方式是 Claude Code + Opus 5.5 同时开 3 个 <code>/loop</code>，用户报 bug 十几分钟后就修好上线。@vista8 推荐了一个开源的安克录音豆第三方客户端，后续可以自己改造成 AI 麦克风。</li>
+      <li><strong>关键方法/工具：</strong>PiClaw（基于 Pi Agent）、Magpie、安克录音豆第三方客户端、Claude Code 多 <code>/loop</code> 并行开发。</li>
+      <li><strong>可行动点：</strong>想要可控的个人 Agent 又不想从零写，可以从 PiClaw 这类「内核 + 插件」方案起步；试试多个 <code>/loop</code> 并行处理 issue。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2120541856857817154" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2120541856857817154</a> ；<a href="https://x.com/runes_leo/status/2120396109973725408" target="_blank" rel="noopener noreferrer">https://x.com/runes_leo/status/2120396109973725408</a> ；<a href="https://x.com/vista8/status/2120529325560885364" target="_blank" rel="noopener noreferrer">https://x.com/vista8/status/2120529325560885364</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps、@runes_leo、@vista8</li>
+      </ul>
+      <h3 id="25-claude-新版使用政策生效真正新增的是哪些">2.5 Claude 新版使用政策生效：真正新增的是哪些</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@runes_leo 把 Claude 新旧两版使用政策逐条对比：中文圈在传的「最严地区新规」其实是旧规则（去年 9 月版就有），官方 10 月 8 日公告说这次主要是把原有规则写清楚，和普通用户关系最大的是「不得滥用平台」一节的四处改动（详见原帖）。@vista8 提到 Claude IP 风险检测网站很火；@wofuhuola 则公开表示要全力投入「帮中国人用上 Claude」的生意（远程、云资源等），属于商业判断，风险自担。</li>
+      <li><strong>关键方法/工具：</strong>新旧条款逐条 diff；账号与网络环境自查。</li>
+      <li><strong>可行动点：</strong>别被二手解读带节奏，直接看官方条款中「不得滥用平台」一节；靠 Claude 吃饭的工作流要准备好备用模型（参考 2.1 的评测）。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/runes_leo/status/2120403651613327434" target="_blank" rel="noopener noreferrer">https://x.com/runes_leo/status/2120403651613327434</a> ；<a href="https://x.com/vista8/status/2120505182991839728" target="_blank" rel="noopener noreferrer">https://x.com/vista8/status/2120505182991839728</a> ；<a href="https://x.com/wofuhuola/status/2120504903189815387" target="_blank" rel="noopener noreferrer">https://x.com/wofuhuola/status/2120504903189815387</a></li>
+      <li><strong>来源标注：</strong>【账号池】@runes_leo、@vista8、@wofuhuola</li>
+      </ul>
+      <h3 id="26-personal-agent-在国内的真实渗透率">2.6 Personal Agent 在国内的真实渗透率</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@lifesinger 在 AIE Shanghai 2026 分享《Personal Agent 的另一条路》时现场调查：用过豆包以外任何一款 personal agent 的人只有约 1/5，加上 Claude Code 和 Codex 也没多多少。@yihui_indie 分享自己对 Gemini 的态度反复：从 Ultra 降到 Pro，又因 Gemini Carbon 写文案「没 AI 味」升回 $200 档。</li>
+      <li><strong>关键方法/工具：</strong>线下调研；按任务选订阅档位。</li>
+      <li><strong>可行动点：</strong>做 Agent 产品的，不要高估国内用户的使用基础，教育成本要算进去；订阅按「最常用的一类任务」选档，而不是追最新模型。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/lifesinger/status/2120488944899092981" target="_blank" rel="noopener noreferrer">https://x.com/lifesinger/status/2120488944899092981</a> ；<a href="https://x.com/yihui_indie/status/2120528732406595658" target="_blank" rel="noopener noreferrer">https://x.com/yihui_indie/status/2120528732406595658</a></li>
+      <li><strong>来源标注：</strong>【账号池】@lifesinger、@yihui_indie</li>
+      </ul>
+      <hr>
+      <h2 id="3-ai视频生成工具创意内容">3. AI视频/生成工具/创意内容</h2>
+      <h3 id="31-sachiggsfield-成为全球第三大-ai-私营公司按营收-vibe-gaming">3.1 Sac：Higgsfield 成为全球第三大 AI 私营公司（按营收）+ vibe gaming</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Sac 称 Higgsfield 已是仅次于 Anthropic 和 OpenAI 的全球第三大 AI 私营公司，10 月年化营收突破 13.5 亿美元，未来三个月有望突破 20 亿美元（数据为转述，未独立核实）。同日他判断「vibe gaming 时代即将来临」。</li>
+      <li><strong>关键方法/工具：</strong>Higgsfield（AI 视频生成平台）。</li>
+      <li><strong>可行动点：</strong>AI 视频是目前商业化最快的生成赛道之一，做内容的可以关注 Higgsfield 新功能；做游戏的留意「一句话生成可玩游戏」类工具（见 3.3）。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Saccc_c/status/2120367108332867674" target="_blank" rel="noopener noreferrer">https://x.com/Saccc_c/status/2120367108332867674</a> ；<a href="https://x.com/Saccc_c/status/2120610332901249193" target="_blank" rel="noopener noreferrer">https://x.com/Saccc_c/status/2120610332901249193</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@Saccc_c Sac</li>
+      </ul>
+      <h3 id="32-复刻小lin说风格chatcut-接入-agent-视频包装-skill">3.2 复刻「小Lin说」风格：ChatCut 接入 Agent + 视频包装 skill</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@KinGao476942 分享三步复刻「小Lin说」风格剪辑：把 ChatCut 接入 Grok Bot（发一段让它读取接入文档的指令），再让 Agent 按风格剪辑（完整步骤见原帖）。@ameliax111 放出了之前预告的「小 lin 说视频包装 skill」。@tuturetom 预告基于 Code Video 的全栈视频工作台：整合 Opus 5.5、Fable 5.2 做动效视频的最佳实践，支持 20+ Agent、BYOK 多模态模型和 200+ 品牌动效规范。</li>
+      <li><strong>关键方法/工具：</strong>ChatCut、视频包装 skill、Code Video 工作台。</li>
+      <li><strong>可行动点：</strong>做知识类口播的，可以直接用 ChatCut + 这个 skill 跑一条视频，对比自己手剪的耗时。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/KinGao476942/status/2120476101399216519" target="_blank" rel="noopener noreferrer">https://x.com/KinGao476942/status/2120476101399216519</a> ；<a href="https://x.com/ameliax111/status/2120534436316086280" target="_blank" rel="noopener noreferrer">https://x.com/ameliax111/status/2120534436316086280</a> ；<a href="https://x.com/tuturetom/status/2120461846067196241" target="_blank" rel="noopener noreferrer">https://x.com/tuturetom/status/2120461846067196241</a></li>
+      <li><strong>来源标注：</strong>【账号池】@KinGao476942、@ameliax111、@tuturetom</li>
+      </ul>
+      <h3 id="33-一句话生成可玩游戏-互动故事yoroll-agentcrommacode">3.3 一句话生成可玩游戏 / 互动故事：Yoroll Agent、CrommaCode</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@YorollAI：描述想要的 2D/3D 游戏，Yoroll Agent 自动写剧情、建角色、搭场景、配音并测试；新增互动视觉故事模式（插画 + 配音对白 + 影响剧情的选择）。@chunxiangai 介绍 CrommaCode：把 Agent 的工具调用映射成 5 个游戏世界里的物理动作，是一种「游戏化 Agent Harness」。</li>
+      <li><strong>关键方法/工具：</strong>Yoroll Agent、CrommaCode。</li>
+      <li><strong>可行动点：</strong>想做互动内容或儿童教育产品的，可以用 Yoroll 快速做原型。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/YorollAI/status/2120527533498323419" target="_blank" rel="noopener noreferrer">https://x.com/YorollAI/status/2120527533498323419</a> ；<a href="https://x.com/YorollAI/status/2120527847026741620" target="_blank" rel="noopener noreferrer">https://x.com/YorollAI/status/2120527847026741620</a> ；<a href="https://x.com/chunxiangai/status/2120518654575956289" target="_blank" rel="noopener noreferrer">https://x.com/chunxiangai/status/2120518654575956289</a></li>
+      <li><strong>来源标注：</strong>【账号池】@YorollAI、@chunxiangai</li>
+      </ul>
+      <h3 id="34-图像与解说视频minimax-h3-imageopus-55-解说片codex-定格动画">3.4 图像与解说视频：MiniMax H3 Image、Opus 5.5 解说片、Codex 定格动画</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@0xbisc 用 MiniMax H3 Image 把角色设定图变成手绘风「角色自定义窗口」（上传角色图 + 提示词，模型识别角色特征后生成整个界面，提示词见原帖）。@MiniMax_AI 展示 H3 Image 用于电商和广告：从草图出发，同一产品在棚拍到生活场景中保持一致。@melvindvivas 用 Claude Code + Opus 5.5 做解说视频，用 Gemini 3.8 Flash TTS 配音。@lemomo_ai 用 Codex 做纸箱风格定格动画。@xiaoxiaodong 的提示词库被酒店从业者用来批量出营销海报（1 小时做一周用量）。</li>
+      <li><strong>关键方法/工具：</strong>MiniMax H3 Image、Claude Code + Opus 5.5 + Gemini TTS、Codex。</li>
+      <li><strong>可行动点：</strong>电商团队可以用 H3 Image 测试「一张产品图 → 多场景一致性」；解说类视频试试「代码生成画面 + TTS」的组合。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/0xbisc/status/2120437083944943721" target="_blank" rel="noopener noreferrer">https://x.com/0xbisc/status/2120437083944943721</a> ；<a href="https://x.com/MiniMax_AI/status/2120593294933819491" target="_blank" rel="noopener noreferrer">https://x.com/MiniMax_AI/status/2120593294933819491</a> ；<a href="https://x.com/melvindvivas/status/2120482520928309436" target="_blank" rel="noopener noreferrer">https://x.com/melvindvivas/status/2120482520928309436</a> ；<a href="https://x.com/lemomo_ai/status/2120486701202309468" target="_blank" rel="noopener noreferrer">https://x.com/lemomo_ai/status/2120486701202309468</a> ；<a href="https://x.com/xiaoxiaodong/status/2120521423567589448" target="_blank" rel="noopener noreferrer">https://x.com/xiaoxiaodong/status/2120521423567589448</a></li>
+      <li><strong>来源标注：</strong>【账号池】@0xbisc、@MiniMax_AI、@melvindvivas、@lemomo_ai、@xiaoxiaodong</li>
+      </ul>
+      <hr>
+      <h2 id="4-cryptoweb3投资交易">4. Crypto/Web3/投资/交易</h2>
+      <h3 id="41-btc-守住-73k200-周均线日线收盘止损情绪滞后于价格">4.1 BTC 守住 73K：200 周均线、日线收盘止损、情绪滞后于价格</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@virtualbacon 的 73K 多单：CPI 偏热时 Coinbase 插针到 72.6K，止损规则是「日线收于 73K（200 日均线）下方」，日线收在 73.7K，所以仍持有。他最信任的长期线是 200 周均价，但强调这不适用于山寨币；「底部不需要极度恐惧，因为情绪滞后于价格」；每轮周期他犯的错都是以为自己的山寨币特别，长期只有比特币有持续牛市。另一条：Strategy 11/30 收盘被移出相关指数，指数基金持有约 16 亿美元其股票，卖的是股票而不是 BTC，没有任何机制迫使它卖出 850,364 枚比特币。</li>
+      <li><strong>关键方法/工具：</strong>200 周均线、日线收盘止损、情绪 vs 价格。</li>
+      <li><strong>可行动点：</strong>给每笔仓位写清楚「以收盘价为准」的退出条件；山寨仓位不要套用 BTC 的长期持有逻辑。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/virtualbacon/status/2120527221542772817" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2120527221542772817</a> ；<a href="https://x.com/virtualbacon/status/2120567486399819866" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2120567486399819866</a> ；<a href="https://x.com/virtualbacon/status/2120604307540042055" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2120604307540042055</a> ；<a href="https://x.com/virtualbacon/status/2120523164170023418" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2120523164170023418</a> ；<a href="https://x.com/virtualbacon/status/2120639339302645801" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2120639339302645801</a></li>
+      <li><strong>来源标注：</strong>【账号池】@virtualbacon</li>
+      </ul>
+      <h3 id="42-美股左侧加仓的三个教训">4.2 美股左侧加仓的三个教训</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@darrencao2024 复盘这次下跌：上周四纳指跌 5% 后最后一次大幅加仓，现金只剩 2%。三个教训：① 一开始子弹打得太猛（如 NBIS 180、AMD 刚破 500 就激进加仓），真跌到黄金点位时已没力度；② 高位持有高 beta 时应多配防御仓位，暴跌时能减小账户回撤；③ 只拿真正有信仰的股票，低位把信仰度不高的换成估值同样低、基本面更好的。他另建议 SGOV 收益低时可部分配 GPIX/GPIQ 这类 covered call ETF，临近退休的大资金可配 HDV、SCHD。@1kbxx 分享了 ZEC 落袋、BTC 周线五连阴的交易心态。</li>
+      <li><strong>关键方法/工具：</strong>分批加仓、防御仓位（HDV/SCHD）、covered call ETF。</li>
+      <li><strong>可行动点：</strong>提前把子弹按价位分成几档写下来；高 beta 仓位重时给自己设一个防御仓位下限。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/darrencao2024/status/2120534095465693604" target="_blank" rel="noopener noreferrer">https://x.com/darrencao2024/status/2120534095465693604</a> ；<a href="https://x.com/darrencao2024/status/2120528779709706701" target="_blank" rel="noopener noreferrer">https://x.com/darrencao2024/status/2120528779709706701</a> ；<a href="https://x.com/1kbxx/status/2120423852497150267" target="_blank" rel="noopener noreferrer">https://x.com/1kbxx/status/2120423852497150267</a></li>
+      <li><strong>来源标注：</strong>【账号池】@darrencao2024、@1kbxx</li>
+      </ul>
+      <h3 id="43-链上增量telegram-gram-钱包near-隐私池后量子签名银行-app-买币">4.3 链上增量：Telegram Gram 钱包、NEAR 隐私池、后量子签名、银行 App 买币</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@durov：Telegram 上 48 小时内激活了 100 多万个自托管 Gram 钱包，$GRAM 24 小时涨 10%。@Airdrops_one：NEAR Intents 的保密池存款约 1.43 亿美元，三个月前约 3,000 万美元，9 月底峰值 1.87 亿。@Algorand：生态应用 @haydotapp 支持用 passkey 创建后量子账户，用 Falcon-1024 签名交易。@virtualbacon：以色列 Discount Bank 客户 11/26 起可在银行 App 内直接交易 BTC 和 ETH。</li>
+      <li><strong>关键方法/工具：</strong>自托管钱包分发、隐私交易池、后量子签名、银行渠道。</li>
+      <li><strong>可行动点：</strong>关注「分发渠道」（Telegram、银行 App）带来的新用户；后量子签名是长期叙事，可以先了解，不急于下注。投资相关内容不构成建议。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/durov/status/2120495033669525657" target="_blank" rel="noopener noreferrer">https://x.com/durov/status/2120495033669525657</a> ；<a href="https://x.com/Airdrops_one/status/2120559319603450361" target="_blank" rel="noopener noreferrer">https://x.com/Airdrops_one/status/2120559319603450361</a> ；<a href="https://x.com/Algorand/status/2120544579548217803" target="_blank" rel="noopener noreferrer">https://x.com/Algorand/status/2120544579548217803</a> ；<a href="https://x.com/virtualbacon/status/2120581134387933185" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2120581134387933185</a></li>
+      <li><strong>来源标注：</strong>【账号池】@durov、@Airdrops_one、@Algorand、@virtualbacon</li>
+      </ul>
+      <hr>
+      <h2 id="5-思想家原则独立思考">5. 思想家/原则/独立思考</h2>
+      <h3 id="51-范凯garbage-in-garbage-out-也适用于人">5.1 范凯：garbage in, garbage out 也适用于人</h3>
+      <ul>
+      <li><strong>核心观点：</strong>训练模型讲 garbage in, garbage out，人也一样：每天刷抖音、公众号、知乎、微博，垃圾进，人就变成那样；中文互联网戾气重，就是天天 garbage in 的结果。</li>
+      <li><strong>关键方法/工具：</strong>信息源管理。</li>
+      <li><strong>可行动点：</strong>像清洗训练数据一样清理自己的信息流：本周取关 5 个只输出情绪的账号，换成原创方法类账号。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2120361631800869368" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2120361631800869368</a> ；<a href="https://x.com/fankaishuoai/status/2120361712771813431" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2120361712771813431</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@fankaishuoai 范凯</li>
+      </ul>
+      <h3 id="52-用-ai-把不该做的事做得飞快是最大的陷阱">5.2 用 AI 把不该做的事做得飞快，是最大的陷阱</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@jiayuan_jy：现在最该警惕的是用 AI 把本来不需要做的事做得飞快；如果没先找出极少数能带来重大改变的工作，AI 只会成倍放大琐碎和分心的事。@DavidKPiano：离开 AI Agent 一天不会让你落后一天，今天一天的工作量将来可能只要一小时。@OdysseysEth：以前最出色的人是 T 型的，现在也许是「哑铃型」：会问问题，也知道什么是好的。</li>
+      <li><strong>关键方法/工具：</strong>先选题再提速；提问能力 + 品味。</li>
+      <li><strong>可行动点：</strong>每天开工前先写下当天唯一一件「做成会带来重大改变」的事，再决定让 Agent 加速哪些部分。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/jiayuan_jy/status/2120593245357105234" target="_blank" rel="noopener noreferrer">https://x.com/jiayuan_jy/status/2120593245357105234</a> ；<a href="https://x.com/DavidKPiano/status/2120578649472577900" target="_blank" rel="noopener noreferrer">https://x.com/DavidKPiano/status/2120578649472577900</a> ；<a href="https://x.com/OdysseysEth/status/2120474168168960243" target="_blank" rel="noopener noreferrer">https://x.com/OdysseysEth/status/2120474168168960243</a></li>
+      <li><strong>来源标注：</strong>【账号池】@jiayuan_jy、@DavidKPiano、@OdysseysEth</li>
+      </ul>
+      <h3 id="53-判断一个人靠不靠谱阅历-知识结构">5.3 判断一个人靠不靠谱：阅历 + 知识结构</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@CaminoTexas：一个人的认知不可能超出他的阅历加知识结构；判断别人说话做事靠不靠谱，只能看经历加阅读这两个必要条件，过关后再看心智和综合能力；只念书、缺少现实经验的人，在现实问题上可以先跳过。</li>
+      <li><strong>关键方法/工具：</strong>信息源筛选的两道门槛。</li>
+      <li><strong>可行动点：</strong>关注一个新博主前，先查他在该领域有没有亲身经历（项目、仓位、作品）。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/CaminoTexas/status/2120515042739159429" target="_blank" rel="noopener noreferrer">https://x.com/CaminoTexas/status/2120515042739159429</a></li>
+      <li><strong>来源标注：</strong>【账号池】@CaminoTexas</li>
+      </ul>
+      <h3 id="54-ai-对白领就业的冲击数据视角">5.4 AI 对白领就业的冲击：数据视角</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@oran_ge 从美国就业数据看：软件行业基本停滞，部分职业消失趋势明显，AI 数据中心相关实体岗位大幅增加；科技公司空缺岗位超过 28.1 万、同比增长 17%，但产品经理、工程和设计岗位只增长 2%。他认为这是「智能的工业革命」，对白领的冲击像当年工业革命对蓝领一样。@huxlab 转述马斯克：普通人靠出售作品赚钱的窗口最多还有 3 年。</li>
+      <li><strong>关键方法/工具：</strong>就业结构数据。</li>
+      <li><strong>可行动点：</strong>盘点自己的工作里哪些是「可被清晰描述的流程」（最容易被自动化），提前转向需要判断、关系和现场的部分。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/oran_ge/status/2120662791829008806" target="_blank" rel="noopener noreferrer">https://x.com/oran_ge/status/2120662791829008806</a> ；<a href="https://x.com/huxlab/status/2120513797266014351" target="_blank" rel="noopener noreferrer">https://x.com/huxlab/status/2120513797266014351</a></li>
+      <li><strong>来源标注：</strong>【账号池】@oran_ge、@huxlab</li>
+      </ul>
+      <hr>
+      <h2 id="6-身心整合终身学习超级个体补充">6. 身心整合/终身学习/超级个体补充</h2>
+      <h3 id="61-亦仁ai-时代最大红利是活-10-年送-50-年">6.1 亦仁：AI 时代最大红利是「活 10 年送 50 年」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>亦仁一句话：AI 时代最大的红利是「活 10 年送 50 年」（配图见原帖），即 AI 放大了每单位时间的产出，同样十年能做出过去几十年的事。</li>
+      <li><strong>关键方法/工具：</strong>用 AI 换时间杠杆。</li>
+      <li><strong>可行动点：</strong>给自己算一笔账：哪些事已经能交给 Agent，把省下来的时间投到健康和长期项目上。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/yiren_ai/status/2120540404609438000" target="_blank" rel="noopener noreferrer">https://x.com/yiren_ai/status/2120540404609438000</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@yiren_ai 亦仁</li>
+      </ul>
+      <h3 id="62-身心修复局醒来先摸手机的焦虑和庄子的心斋">6.2 身心修复局：醒来先摸手机的焦虑，和庄子的「心斋」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>一早醒来先摸手机，胸口像被按住，很多人叫它焦虑，最近又流行搜「迷走神经重置」。庄子讲「心斋」：先别急着改外面的人，先把心从外面收回来，坐回身体里；注意力长期停在明天的担心和昨天的责备里，身体就只能一直站岗。</li>
+      <li><strong>关键方法/工具：</strong>心斋（注意力回到身体）。</li>
+      <li><strong>可行动点：</strong>起床后头 10 分钟不碰手机，先做几轮缓慢呼气或身体扫描，再开始一天。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/MindfulReturn/status/2120378911473180838" target="_blank" rel="noopener noreferrer">https://x.com/MindfulReturn/status/2120378911473180838</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@MindfulReturn 身心修复局</li>
+      </ul>
+      <h3 id="63-用-agent-学习先让它摸清你的底子">6.3 用 Agent 学习：先让它摸清你的底子</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@yan5xu 推荐的学习方法：不要一上来让 AI 教你，而是让 Agent 通过多轮提问，由浅入深摸清你对这个知识的实际掌握，再按缺口针对性学习（他认为 Gemini Pro 系列很适合）。@LotusDecoder 分享一个月持续向 Gemini 4 请教、把传统方法和科技结合，得到很多切身有效的实践。@alexeixbt 转述：神经通路会随重复、刻意练习和有针对性的反馈而改变，真正的改变来自长期练习而非短期习惯。</li>
+      <li><strong>关键方法/工具：</strong>诊断式提问学习、刻意练习 + 反馈。</li>
+      <li><strong>可行动点：</strong>下次学新东西时，先让 AI 出 10 道由浅入深的诊断题，只学答错的部分。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/yan5xu/status/2120499511156232509" target="_blank" rel="noopener noreferrer">https://x.com/yan5xu/status/2120499511156232509</a> ；<a href="https://x.com/LotusDecoder/status/2120526570616131858" target="_blank" rel="noopener noreferrer">https://x.com/LotusDecoder/status/2120526570616131858</a> ；<a href="https://x.com/alexeixbt/status/2120607302440886520" target="_blank" rel="noopener noreferrer">https://x.com/alexeixbt/status/2120607302440886520</a></li>
+      <li><strong>来源标注：</strong>【账号池】@yan5xu、@LotusDecoder、@alexeixbt</li>
+      </ul>
+      <hr>
+      <h2 id="7-媒体工具其他">7. 媒体/工具/其他</h2>
+      <h3 id="71-黄仁勋事件进入新阶段媒体报道未经核实">7.1 黄仁勋事件进入新阶段（媒体报道，未经核实）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@APompliano 转述《纽约时报》报道：黄仁勋与一名向他汇报的英伟达高管有私人关系；@cuichenghao 转述 NYT 称对象为医疗业务副总裁（未经本简报核实）。市场讨论集中在董事会是否会更换 CEO：@APompliano 引 Dan Ives 说法「如果他对董事会撒谎就必须换人」；范凯以英伟达股东身份表示考虑「壮士断腕」；@XFreeze 则认为不应因私生活影响其职位。本期只记录事件脉络，八卦细节未收录。</li>
+      <li><strong>关键方法/工具：</strong>关键人物风险。</li>
+      <li><strong>可行动点：</strong>持有 NVDA 的，留意董事会正式公告，而不是社交媒体传闻；投资相关内容不构成建议。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/APompliano/status/2120642984043598263" target="_blank" rel="noopener noreferrer">https://x.com/APompliano/status/2120642984043598263</a> ；<a href="https://x.com/APompliano/status/2120522441554526291" target="_blank" rel="noopener noreferrer">https://x.com/APompliano/status/2120522441554526291</a> ；<a href="https://x.com/fankaishuoai/status/2120681266580525537" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2120681266580525537</a> ；<a href="https://x.com/XFreeze/status/2120651605074997692" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2120651605074997692</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@fankaishuoai 范凯；【账号池】@APompliano、@cuichenghao、@XFreeze</li>
+      </ul>
+      <h3 id="72-行业动态字节-ai-芯片负责人离职notion-泄露的启示x-职业资料">7.2 行业动态：字节 AI 芯片负责人离职、Notion 泄露的启示、X 职业资料</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@latepostnews 独家：字节跳动 AI 芯片与 DPU 团队负责人施云峰已提交离职申请，自研芯片布局进一步整合。@kepano 借 Notion 数据泄露提醒：存在公司可随意读取（非端到端加密）的数据库里的数据，离泄露只差一次事故。@XFreeze：X 正在测试在个人资料里添加工作经历。@XCreators 引 Bryan Johnson：想要更多回复，就给别人留下可以接话的空间。</li>
+      <li><strong>关键方法/工具：</strong>本地优先 / 端到端加密笔记；X 运营技巧。</li>
+      <li><strong>可行动点：</strong>敏感笔记优先放本地或端到端加密工具；发帖时留一个开放式结尾引导回复。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/latepostnews/status/2120512432020103509" target="_blank" rel="noopener noreferrer">https://x.com/latepostnews/status/2120512432020103509</a> ；<a href="https://x.com/kepano/status/2120597035028255136" target="_blank" rel="noopener noreferrer">https://x.com/kepano/status/2120597035028255136</a> ；<a href="https://x.com/XFreeze/status/2120627970163486992" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2120627970163486992</a> ；<a href="https://x.com/XCreators/status/2120587296458334225" target="_blank" rel="noopener noreferrer">https://x.com/XCreators/status/2120587296458334225</a></li>
+      <li><strong>来源标注：</strong>【账号池】@latepostnews、@kepano、@XFreeze、@XCreators</li>
+      </ul>
+      <h3 id="73-pi-作者访谈与-aie-演讲">7.3 Pi 作者访谈与 AIE 演讲</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@mattpocockuk 下周一 16:20 UTC（香港时间 11-17 00:20）直播访谈 Pi 的作者 @mitsuhiko 和 @badlogicgames，聊 AI 时代代码应该怎么写。@trq212 在 AIE Code 做闭幕演讲《the sweet side of the bitter lesson》。@wesbos 就 GitHub 近期宕机采访了 Kyle Daigle，谈基础设施如何应对新增需求。</li>
+      <li><strong>关键方法/工具：</strong>Pi Agent、AIE Code。</li>
+      <li><strong>可行动点：</strong>对 Pi Agent 感兴趣（见 2.1、2.4），可以预约这场访谈。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/mattpocockuk/status/2120554967035433183" target="_blank" rel="noopener noreferrer">https://x.com/mattpocockuk/status/2120554967035433183</a> ；<a href="https://x.com/trq212/status/2120620900785820143" target="_blank" rel="noopener noreferrer">https://x.com/trq212/status/2120620900785820143</a> ；<a href="https://x.com/wesbos/status/2120528428294365561" target="_blank" rel="noopener noreferrer">https://x.com/wesbos/status/2120528428294365561</a></li>
+      <li><strong>来源标注：</strong>【账号池】@mattpocockuk、@trq212、@wesbos</li>
+      </ul>
+      <hr>
+      <h2 id="附录检索说明">附录：检索说明</h2>
+      <ul>
+      <li>共 32 次 X 读取：20 批账号池 <code>from:</code> 检索（排除转推和回复）+ 10 个高频批次各翻 1 页 + 核心 KOL 单独检索 1 次 + 1 次批量取全文；均成功。窗口为 2026-11-11 01:18 UTC 至 2026-11-12 01:18 UTC（香港时间 11-11 09:18 至 11-12 09:18）；去重后约 770 帖进入候选。</li>
+      <li>覆盖缺口：每页最多返回 25 条，部分高频批次（含 @XFreeze、@swordBluesy、@JMkernt、@xue9500、@mikepat711 等高频账号所在批次）只覆盖到窗口较近的一段，较早时段可能漏掉少量帖子；核心 KOL 全窗口覆盖。</li>
+      <li>部分原帖是 X 长文或带截断，接口只返回开头，简报中已注明「详见原帖」。</li>
+      <li>过滤说明：高互动但无 AI 或方法增量的内容未收录，包括黄仁勋/黄乐事件八卦细节、政治新闻、Tesla/SpaceX 重复聚合、生活方式图、励志口号、交易所活动帖和段子。@MindfulReturn 窗口内多条为向 @grok 提问的政治猜测，未收录。</li>
+      <li>核心 KOL：@qzhxjhj 窗口内仅 1 条回复，无达标条目；其余 4 位均有入报。</li>
+      <li>各条数据均为作者自报或转述，未经独立复现；模型价格、条款和营收数字以官方信息为准；投资相关内容不构成建议。</li>
+      </ul>
+      <p class="brief-end">
+        <a href="2026-11-11.html">较早一天</a>
+        <a href="../index.html">返回目录</a>
+        <a href="2026-11-12.md">Markdown 原文</a>
+      </p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>凯旋 · AI圈每日简报</p>
+    <p><a href="https://github.com/kaixuan94/ai-daily-briefing">GitHub 仓库</a></p>
+  </footer>
+</body>
+</html>
