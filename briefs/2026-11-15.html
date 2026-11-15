@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161310" media="(prefers-color-scheme: dark)">
+  <title>AI圈每日简报 · 2026-11-15 — 凯旋</title>
+  <meta name="description" content="2026-11-15 AI圈每日简报，7 个分类，30 条精选。">
+  <link rel="canonical" href="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-15.html">
+  <meta property="og:title" content="AI圈每日简报 · 2026-11-15 — 凯旋">
+  <meta property="og:description" content="2026-11-15 AI圈每日简报，7 个分类，30 条精选。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-15.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">简</span>
+        <span>
+          <span class="brand-name">凯旋</span>
+          <span class="brand-sub">AI圈每日简报</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="站点">
+        <a href="../index.html">目录</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+    <article class="brief">
+      <h1 id="ai圈每日简报-2026-11-15">AI圈每日简报 · 2026-11-15</h1>
+      <blockquote>
+      <p>时间窗：2026-11-14 09:22 至 2026-11-15 09:22（香港时间）
+      监控范围：账号池 <code>ai_monitor_accounts.md</code>（304 个去重手柄，含 5 位核心 KOL）。300 个手柄按 15 人一批分 20 批做 <code>from:</code> 检索（排除转推和回复，按相关度取每批前 25 条），5 位核心 KOL 单独检索（含回复）。去重后约 480 帖进入候选，按互动、收藏和信息量筛出约 50 条重点帖阅读。
+      覆盖说明：每批只取 1 页（最多 25 条），高频批次可能漏掉部分低互动帖；部分长帖接口只返回开头，条目只按可见内容转述，细节请点原帖。今天是周六，账号池里 Starship 首次「筷子夹船」和黄仁勋离职余波刷屏，干货密度比工作日低。
+      核心 KOL 覆盖：范凯 @fankaishuoai（本周直播讲本地自托管 AI 管家 Hermes、Grok Bot 与 Hermes 并行对比，入报；另有清仓英伟达的个人观点）；Bruce Qin @qzhxjhj（「盈利收手」退出合约的复盘、Claude 主力 + Bot 补位的用法，入报）；身心修复局 @MindfulReturn（窗口内多为黄仁勋相关短评和回复，无达标条目）；Sac @Saccc_c（仅一条回复，无达标条目）；亦仁 @yiren_ai（仅一条回复，无达标条目）。</p>
+      </blockquote>
+      <h2 id="今日三件事">今日三件事</h2>
+      <ol>
+      <li><strong>Starship Flight 15 后续：塔架首次夹住飞船：</strong>Ship 42 在轨 22 小时、绕地 14 圈、部署 26 颗 Starlink V3 后返回发射塔被 Mechazilla 夹住；Sundar Pichai 也发帖祝贺。注意 @mylifeonmystyle 的提醒：同一次发射同时回收两级还没实现（本次一级 Booster 22 回收失败）。</li>
+      <li><strong>Agent 工程方法论密集输出：</strong>@poteto 在 AIE 讲 Grok Bot 团队如何「快又不牺牲质量」，并提出「quick fix 有害论」；@kepano 的 Obsidian Skills 增至 7 个；@housecor「Skill 就像函数」；@simonw 讲「简单活消失后工作为何更难」。</li>
+      <li><strong>黄仁勋离职 → 市场情绪：</strong>FT 称英伟达董事会接触 Arm CEO Rene Haas 作为继任人选，英伟达周五收跌 2.01%、市值首次跌破 4 万亿美元；BTC 一度跌到 58K 附近后反弹，恐慌指数处于「极度恐惧」。</li>
+      </ol>
+      <nav class="toc" aria-label="目录"><h2 id="目录">目录</h2>
+      <ol>
+      <li><a href="#1-ai公司官方核心研究者与工程师">AI公司/官方/核心研究者与工程师</a></li>
+      <li><a href="#2-中文ai落地独立开发一人公司opc超级个体">中文AI落地/独立开发/一人公司(OPC)/超级个体</a></li>
+      <li><a href="#3-ai视频生成工具创意内容">AI视频/生成工具/创意内容</a></li>
+      <li><a href="#4-cryptoweb3投资交易">Crypto/Web3/投资/交易</a></li>
+      <li><a href="#5-思想家原则独立思考">思想家/原则/独立思考</a></li>
+      <li><a href="#6-身心整合终身学习超级个体补充">身心整合/终身学习/超级个体补充</a></li>
+      <li><a href="#7-媒体工具其他">媒体/工具/其他</a></li>
+      </ol></nav>
+      <hr>
+      <h2 id="1-ai公司官方核心研究者与工程师">1. AI公司/官方/核心研究者与工程师</h2>
+      <h3 id="11-poteto-aie-演讲grok-bot-团队如何快速交付又不降质量">1.1 @poteto AIE 演讲：Grok Bot 团队如何快速交付又不降质量</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Grok Bot 团队工程师 @poteto 的 AI Engineer 大会演讲视频上线，主题是团队怎么做到交付很快、同时不在质量上妥协。帖子收藏近 2900，是本期收藏最高的一条。@mattyp 也推荐她的演讲，称「不只适合工程师，适合任何想提升 AI 思维和用法的人」。</li>
+      <li><strong>关键方法/工具：</strong>AI Engineer Code Summit 演讲视频。</li>
+      <li><strong>可行动点：</strong>周末找时间看完，摘出 2–3 条可以直接用到自己 Agent 工作流里的做法。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/poteto/status/2121673563489140863" target="_blank" rel="noopener noreferrer">https://x.com/poteto/status/2121673563489140863</a> ；<a href="https://x.com/mattyp/status/2121695731136577628" target="_blank" rel="noopener noreferrer">https://x.com/mattyp/status/2121695731136577628</a></li>
+      <li><strong>来源标注：</strong>【账号池】@poteto、@mattyp</li>
+      </ul>
+      <h3 id="12-quick-fix-有害论别总让-agent-做最小改动">1.2 「Quick fix 有害论」：别总让 Agent 做最小改动</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@poteto 提醒：你要求 Agent 做「最小、最快的改动」时，可能在让它写更差的代码。看似无害的创可贴补丁，会被下一个 Agent 当成模式照抄，不知不觉就在代码库里扩散开。</li>
+      <li><strong>关键方法/工具：</strong>代码库里的模式会被 Agent 复制，坏模式也一样。</li>
+      <li><strong>可行动点：</strong>给 Agent 的提示里少写「最小改动」，多写「按正确的方式修，并顺手清理同类问题」；在 code review 里专门留意临时补丁。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/poteto/status/2121646643124809848" target="_blank" rel="noopener noreferrer">https://x.com/poteto/status/2121646643124809848</a></li>
+      <li><strong>来源标注：</strong>【账号池】@poteto</li>
+      </ul>
+      <h3 id="13-obsidian-skills-增至-7-个让-agent-完整操作你的知识库">1.3 Obsidian Skills 增至 7 个：让 Agent 完整操作你的知识库</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Obsidian CEO @kepano 发布：Obsidian Skills 已有 7 个，教 Agent 完整操作 vault 和 wiki，包括 obsidian-markdown（双链、嵌入、callout、属性等语法）、obsidian-bases 等。另一条展示 Obsidian 1.15 加载很快（他个人 1.8 万文件、10 个插件的库）。</li>
+      <li><strong>关键方法/工具：</strong>Obsidian Skills（Agent Skill 包）、Obsidian 1.15。</li>
+      <li><strong>可行动点：</strong>用 Obsidian 做笔记的话，装上这套 Skill，让 Agent 直接按 Obsidian 语法整理每日简报或读书笔记。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/kepano/status/2121671411119059034" target="_blank" rel="noopener noreferrer">https://x.com/kepano/status/2121671411119059034</a> ；<a href="https://x.com/kepano/status/2121695483781587269" target="_blank" rel="noopener noreferrer">https://x.com/kepano/status/2121695483781587269</a></li>
+      <li><strong>来源标注：</strong>【账号池】@kepano</li>
+      </ul>
+      <h3 id="14-skill-就像函数必须确定性的流程别用-skill">1.4 Skill 就像函数；必须确定性的流程别用 Skill</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@housecor：Skill 像函数：做一件具体的事、接收参数、有一个或多个输出、可以手动调用或定时调度、可组合（Skill 能调 Skill）、可以分享给团队或公开。另一条补充：如果一个流程<strong>必须</strong>是确定性的，Skill 就不是正确答案，应该写代码。</li>
+      <li><strong>关键方法/工具：</strong>Skill 设计原则。</li>
+      <li><strong>可行动点：</strong>梳理自己的 Skill：确定性步骤（格式转换、部署）沉到脚本里，Skill 只负责需要判断的部分。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/housecor/status/2121648086300623117" target="_blank" rel="noopener noreferrer">https://x.com/housecor/status/2121648086300623117</a> ；<a href="https://x.com/housecor/status/2121693849982841225" target="_blank" rel="noopener noreferrer">https://x.com/housecor/status/2121693849982841225</a></li>
+      <li><strong>来源标注：</strong>【账号池】@housecor</li>
+      </ul>
+      <h3 id="15-ai-engineer-大会两场简单活消失后工作更难推理快了工具调用成瓶颈">1.5 AI Engineer 大会两场：简单活消失后工作更难；推理快了工具调用成瓶颈</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@aiDotEngineer 放出两场 Code Summit 演讲：@simonw 讲「AI 能做更多活，为什么工作反而更累」——简单任务消失，你的野心也追上了工具；@nserrino（Gimlet Labs）讲推理提速 10 倍后，工具调用成了瓶颈，Agent 栈其他部分更重要。频道同时庆祝 YouTube 订阅破 100 万。</li>
+      <li><strong>关键方法/工具：</strong>AIE Code Summit 演讲视频。</li>
+      <li><strong>可行动点：</strong>自己的 Agent 慢时，先量一下时间花在模型推理还是工具调用（搜索、浏览器、文件读写）上。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/aiDotEngineer/status/2121619176527937878" target="_blank" rel="noopener noreferrer">https://x.com/aiDotEngineer/status/2121619176527937878</a> ；<a href="https://x.com/aiDotEngineer/status/2121755058542944628" target="_blank" rel="noopener noreferrer">https://x.com/aiDotEngineer/status/2121755058542944628</a></li>
+      <li><strong>来源标注：</strong>【账号池】@aiDotEngineer</li>
+      </ul>
+      <h3 id="16-grok-api-默认关闭文本水印">1.6 Grok API 默认关闭文本水印</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@XFreeze 称：Grok API 自 11 月 9 日起默认不再给生成文本自动加水印，马斯克确认「只在法律要求或用户要求时开启」。</li>
+      <li><strong>关键方法/工具：</strong>Grok API 文本水印策略。</li>
+      <li><strong>可行动点：</strong>用 Grok API 做内容生产的，留意自己所在地区是否有法律要求标注 AI 生成内容。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/XFreeze/status/2121655209483260270" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2121655209483260270</a></li>
+      <li><strong>来源标注：</strong>【账号池】@XFreeze（二手转述，以官方说明为准）</li>
+      </ul>
+      <hr>
+      <h2 id="2-中文ai落地独立开发一人公司opc超级个体">2. 中文AI落地/独立开发/一人公司(OPC)/超级个体</h2>
+      <h3 id="21-范凯本周直播本地自托管-ai-管家-hermes">2.1 范凯本周直播：本地自托管 AI 管家 Hermes</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@fankaishuoai 本周不讲云端 Bot，讲装在自己电脑里的开源 AI 管家 Hermes：常驻本机，手机发一句话就能在本机读文件、跑命令、按时干活；从一条命令安装，接到 Telegram，再调教成「有用的人」。另一条说他在并行用 Grok Bot 和 Hermes，觉得 Grok Bot「更聪明更体贴」，不确定是底层模型差距还是产品差距。</li>
+      <li><strong>关键方法/工具：</strong>Hermes（开源本地 Agent）+ Telegram 通道；云端 Bot 与本地 Agent 对比。</li>
+      <li><strong>可行动点：</strong>需要碰本机文件或内网资源的任务可以考虑本地 Agent，其余放云端；两者并行跑同一任务比一比效果。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2121630897283932218" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2121630897283932218</a> ；<a href="https://x.com/fankaishuoai/status/2121475968271532086" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2121475968271532086</a></li>
+      <li><strong>来源标注：</strong>【核心KOL】@fankaishuoai</li>
+      </ul>
+      <h3 id="22-多模型分工开发流claude-规划-gpt-后端-codex-三轮审查">2.2 多模型分工开发流：Claude 规划 + GPT 后端 + Codex 三轮审查</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Khazix0918：跟 Claude 对话，Claude 做规划和前端，派活给 GPT 写后端和数据处理，Claude 收尾，再由 Codex 做最多三轮审查——可能是目前 Agent 自动化开发的最优解。@lengs4189 给出另一种分配（Claude 被封后）：Gemini 3.8 Flash 快问快答、Gemini 4 Carbon 主力写代码、Claude Sonnet 5.5 写前端 UI、Claude Opus 5.5 做终极排错。</li>
+      <li><strong>关键方法/工具：</strong>按模型长处分工 + 独立模型交叉审查。</li>
+      <li><strong>可行动点：</strong>下个项目试一次「一个模型写、另一个模型审」，记录审查抓到的问题数。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Khazix0918/status/2121602766976237610" target="_blank" rel="noopener noreferrer">https://x.com/Khazix0918/status/2121602766976237610</a> ；<a href="https://x.com/lengs4189/status/2121554775213044131" target="_blank" rel="noopener noreferrer">https://x.com/lengs4189/status/2121554775213044131</a></li>
+      <li><strong>来源标注：</strong>【账号池】@Khazix0918、@lengs4189</li>
+      </ul>
+      <h3 id="23-stripe-风控警示独立开发者务必开自动提现">2.3 Stripe 风控警示：独立开发者务必开自动提现</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@liangzhu_AI 分享 Stripe 账号被直接终止服务的经历：两天内有用户用同一张卡在他网站上多次开通（后文需点原帖看完整经过），由此强调一定要勾选自动提现，避免余额被冻结。</li>
+      <li><strong>关键方法/工具：</strong>Stripe 自动提现、支付风控。</li>
+      <li><strong>可行动点：</strong>检查自己 Stripe 是否开了自动提现；对同一张卡短时间多次付款设置提醒或限制。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/liangzhu_AI/status/2121532855561978249" target="_blank" rel="noopener noreferrer">https://x.com/liangzhu_AI/status/2121532855561978249</a></li>
+      <li><strong>来源标注：</strong>【账号池】@liangzhu_AI</li>
+      </ul>
+      <h3 id="24-大厂砸钱做数据标注有专长就能接专家标注活">2.4 大厂砸钱做数据标注：有专长就能接「专家标注」活</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@gengdaJ：大厂 AI 竞争就是猛砸钱找专家做数据标注，字节 Xpert 10 月有人领了 18 万。方向包括医疗、法律、金融、STEM 等专业问答，以及模型回复打分与对比评测。收藏 1294。</li>
+      <li><strong>关键方法/工具：</strong>专家数据标注 / 模型评测平台。</li>
+      <li><strong>可行动点：</strong>有行业专长的话，把它当成可以变现的副业渠道评估一下。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/gengdaJ/status/2121442608845328697" target="_blank" rel="noopener noreferrer">https://x.com/gengdaJ/status/2121442608845328697</a></li>
+      <li><strong>来源标注：</strong>【账号池】@gengdaJ</li>
+      </ul>
+      <h3 id="25-把产品价值做厚bizpeel-给订阅用户送-api-余额">2.5 把产品价值做厚：Bizpeel 给订阅用户送 API 余额</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@yihui_indie 给 Bizpeel 订阅用户加了余额，可以用来调用 SimilarWeb、DataForSEO 和各类社媒 API——用「送额度」把订阅从工具变成数据入口。</li>
+      <li><strong>关键方法/工具：</strong>订阅 + 内置第三方 API 额度。</li>
+      <li><strong>可行动点：</strong>自己的订阅产品可以考虑打包一些高价 API 的调用额度，提高续费理由。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/yihui_indie/status/2121620057071718585" target="_blank" rel="noopener noreferrer">https://x.com/yihui_indie/status/2121620057071718585</a></li>
+      <li><strong>来源标注：</strong>【账号池】@yihui_indie</li>
+      </ul>
+      <h3 id="26-把播客做成-skill让-ai-跟主播对话">2.6 把播客做成 Skill：让 AI 跟主播「对话」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@oran_ge 把 Next Token 9 期播客内容做成一个 Skill，装上后可以让 AI 从播客里提取观点、挑选案例，用于行业调研和汇报。</li>
+      <li><strong>关键方法/工具：</strong>内容资产 Skill 化。</li>
+      <li><strong>可行动点：</strong>把自己长期积累的内容（如每日简报存档）也打包成 Skill，方便以后复盘检索。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/oran_ge/status/2121519358837129449" target="_blank" rel="noopener noreferrer">https://x.com/oran_ge/status/2121519358837129449</a></li>
+      <li><strong>来源标注：</strong>【账号池】@oran_ge</li>
+      </ul>
+      <hr>
+      <h2 id="3-ai视频生成工具创意内容">3. AI视频/生成工具/创意内容</h2>
+      <h3 id="31-五步做任意人形动画首帧-视频生成-gem-x-转-3d-动作">3.1 五步做任意人形动画：首帧 → 视频生成 → GEM-X 转 3D 动作</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@CanItCode：① 角色摆 3/4 视角姿势；② 作为首帧丢进视频生成器（如 Kling 4）；③ 描述动作生成视频；④ NVIDIA GEM-X 把视频转成 3D 动作；⑤ 重定向到自己的骨骼。</li>
+      <li><strong>关键方法/工具：</strong>Kling 4、NVIDIA GEM-X、动作重定向。</li>
+      <li><strong>可行动点：</strong>做 3D 角色或游戏的，用这条流程替代动捕，先试一个简单动作。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/CanItCode/status/2121665402107547911" target="_blank" rel="noopener noreferrer">https://x.com/CanItCode/status/2121665402107547911</a></li>
+      <li><strong>来源标注：</strong>【账号池】@CanItCode</li>
+      </ul>
+      <h3 id="32-36-小时零建模做出-3d-动漫射击游戏打包成-33mb-单个-html">3.2 36 小时零建模做出 3D 动漫射击游戏，打包成 33MB 单个 HTML</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Nenlyonis 不会 3D 建模、不用 Unity/Unreal，用 AI 36 小时做出可玩的 3D 动漫 TPS 游戏，整个游戏是一个 33MB 离线 HTML 文件。工具链：Fable 5.2 + Opus 5.5 + Tripo + Blender + GPT Image + Suno + Three.js，原帖 7 条讲流程。另：@sundyme 转介 Fable 5.2 带 3 个 Opus 5.5 智能体在 Blender 里做 3D 项目的演示。</li>
+      <li><strong>关键方法/工具：</strong>Tripo（3D 资产）、Three.js、Fable 5.2 多智能体。</li>
+      <li><strong>可行动点：</strong>看完 7 条流程，记下资产生成和打包两个环节的具体做法。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Nenlyonis/status/2121562182613967082" target="_blank" rel="noopener noreferrer">https://x.com/Nenlyonis/status/2121562182613967082</a> ；<a href="https://x.com/sundyme/status/2121601485943513208" target="_blank" rel="noopener noreferrer">https://x.com/sundyme/status/2121601485943513208</a></li>
+      <li><strong>来源标注：</strong>【账号池】@Nenlyonis、@sundyme</li>
+      </ul>
+      <h3 id="33-seedream-55多轮编辑不掉质量">3.3 Seedream 5.5：多轮编辑不掉质量</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@sunra_ai 上线 Seedream 5.5，称同一张图可编辑上百次，脸、场景和光线保持一致，皮肤近看真实，小字清晰。@0xbisc 实测给 IP 角色做多轮换装，几轮编辑后画质仍然清晰。</li>
+      <li><strong>关键方法/工具：</strong>Seedream 5.5（多轮图像编辑）。</li>
+      <li><strong>可行动点：</strong>做 IP 角色或电商图的，用它做多版本迭代，比从头重生成更稳。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/sunra_ai/status/2121664444803715204" target="_blank" rel="noopener noreferrer">https://x.com/sunra_ai/status/2121664444803715204</a> ；<a href="https://x.com/0xbisc/status/2121547155680968746" target="_blank" rel="noopener noreferrer">https://x.com/0xbisc/status/2121547155680968746</a></li>
+      <li><strong>来源标注：</strong>【账号池】@sunra_ai、@0xbisc</li>
+      </ul>
+      <h3 id="34-crommacode把-agent-的工具调用变成游戏化可视界面">3.4 CrommaCode：把 Agent 的工具调用变成游戏化可视界面</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@chunxiangai 介绍 CrommaCode：一个游戏化的 ADE（Agent 开发环境），把 Agent 平时默默执行的工具调用变成漂亮的视觉效果，音效是核心设计之一。</li>
+      <li><strong>关键方法/工具：</strong>CrommaCode。</li>
+      <li><strong>可行动点：</strong>做 Agent 产品的可以参考它的思路：让后台动作可见，提升用户的掌控感。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/chunxiangai/status/2121616609987203466" target="_blank" rel="noopener noreferrer">https://x.com/chunxiangai/status/2121616609987203466</a></li>
+      <li><strong>来源标注：</strong>【账号池】@chunxiangai</li>
+      </ul>
+      <h3 id="35-纯-svg-线稿交互插画库-一句话提升网页质感">3.5 纯 SVG 线稿交互插画库 + 一句话提升网页质感</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@vikingmute 推荐一个开源库：33 个按主题排列的线稿插画，纯 SVG 绘制，鼠标靠近时有丝滑交互，可调强度，类似 Linear 的互动效果。@dashiAIxz 的小技巧：让 Agent 给网页加 smooth scroll，体验立刻上一个档次，对模型能力几乎没要求。</li>
+      <li><strong>关键方法/工具：</strong>SVG 交互插画库、smooth scroll。</li>
+      <li><strong>可行动点：</strong>给简报站点加上 smooth scroll，几分钟就能改完。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/vikingmute/status/2121607129547043219" target="_blank" rel="noopener noreferrer">https://x.com/vikingmute/status/2121607129547043219</a> ；<a href="https://x.com/dashiAIxz/status/2121539134594617511" target="_blank" rel="noopener noreferrer">https://x.com/dashiAIxz/status/2121539134594617511</a></li>
+      <li><strong>来源标注：</strong>【账号池】@vikingmute、@dashiAIxz</li>
+      </ul>
+      <hr>
+      <h2 id="4-cryptoweb3投资交易">4. Crypto/Web3/投资/交易</h2>
+      <h3 id="41-btc-58k-是更高的低点先定价位再进场">4.1 BTC 58K 是更高的低点？「先定价位再进场」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@virtualbacon 的立场：BTC 不会跌破 58K 创新低，周线仍在上升趋势，这次下跌像是一个深的更高低点（原帖为长串讲理由）。他之前看到 53K，实际只到 58K 就反弹，于是改判——论点被证伪就承认错。配套原则：「别接飞刀」说的是杠杆多单而不是现货；区间没形成前只买现货不开多；价位应在行情开始前定好，中途改数字就是恐慌。</li>
+      <li><strong>关键方法/工具：</strong>周线结构、现货/杠杆分开、预设退出价。</li>
+      <li><strong>可行动点：</strong>下单前写下入场理由、退出价和证伪条件，行情中不改。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/virtualbacon/status/2121669995650564504" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2121669995650564504</a> ；<a href="https://x.com/virtualbacon/status/2121722848712806448" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2121722848712806448</a> ；<a href="https://x.com/virtualbacon/status/2121685431943119011" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2121685431943119011</a></li>
+      <li><strong>来源标注：</strong>【账号池】@virtualbacon</li>
+      </ul>
+      <h3 id="42-交易只能共享原则别死安全边际长期趋势">4.2 交易只能共享原则：别死、安全边际、长期趋势</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@0xcryptowizard：争论观点对错没意思，胜率 95% 也能亏光，能共享的只有原则：一，别死；二，安全边际，成本低；三，找好标的，最好有长期趋势。Bruce Qin @qzhxjhj 的复盘呼应这点：别人大亏收手，他是盈利收手，「这个系统赚和亏都没有尽头，只有亏完才有尽头，我在这方面没有优势」。</li>
+      <li><strong>关键方法/工具：</strong>生存优先的交易原则。</li>
+      <li><strong>可行动点：</strong>认清自己没有优势的市场，及时离场比证明自己对更重要。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/0xcryptowizard/status/2121759200091193426" target="_blank" rel="noopener noreferrer">https://x.com/0xcryptowizard/status/2121759200091193426</a> ；<a href="https://x.com/qzhxjhj/status/2121506834414743709" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2121506834414743709</a></li>
+      <li><strong>来源标注：</strong>【账号池】@0xcryptowizard；【核心KOL】@qzhxjhj</li>
+      </ul>
+      <h3 id="43-黄仁勋离职对-ai-交易和-btc-的传导">4.3 黄仁勋离职对 AI 交易和 BTC 的传导</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@virtualbacon 早报：FT 称英伟达董事会接触 Arm CEO Rene Haas 作为继任者，英伟达周五跌 2.01%、首次收在 4 万亿美元市值以下。@APompliano 的节目讨论黄仁勋离职对 AI 交易的影响、BTC 跌到 69K、利率与通胀、Strategy 被移出指数等；他另一条说「BTC 63,000 美元时出现极度恐惧」。@virtualbacon 还提出：BTC 一直跟着 AI 周期交易走，Anthropic IPO 路演唯一值得看的信号是新的融资额或更高估值。</li>
+      <li><strong>关键方法/工具：</strong>AI 股 ↔ BTC 联动观察。</li>
+      <li><strong>可行动点：</strong>把英伟达和 BTC 放进同一张观察表，关注 Anthropic IPO 的估值数字。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/virtualbacon/status/2121604677619871868" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2121604677619871868</a> ；<a href="https://x.com/APompliano/status/2121618323850858619" target="_blank" rel="noopener noreferrer">https://x.com/APompliano/status/2121618323850858619</a> ；<a href="https://x.com/APompliano/status/2121740704850624586" target="_blank" rel="noopener noreferrer">https://x.com/APompliano/status/2121740704850624586</a> ；<a href="https://x.com/virtualbacon/status/2121651598870946293" target="_blank" rel="noopener noreferrer">https://x.com/virtualbacon/status/2121651598870946293</a></li>
+      <li><strong>来源标注：</strong>【账号池】@virtualbacon、@APompliano</li>
+      </ul>
+      <h3 id="44-boros做空资金费率吃收益">4.4 Boros：做空资金费率吃收益</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@boros_fi（Pendle 旗下）推一个市场下跌时的策略：在 Boros 上做空 BTC 资金费率（short YU），资金费率为负时收取而不是支付，且不用直接做空现货承担被轧空风险。属项目方自推。</li>
+      <li><strong>关键方法/工具：</strong>资金费率交易（Boros）。</li>
+      <li><strong>可行动点：</strong>仅作了解资金费率产品的入口；项目方营销内容，参与前自查风险。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/boros_fi/status/2121578612025422280" target="_blank" rel="noopener noreferrer">https://x.com/boros_fi/status/2121578612025422280</a></li>
+      <li><strong>来源标注：</strong>【账号池】@boros_fi</li>
+      </ul>
+      <hr>
+      <h2 id="5-思想家原则独立思考">5. 思想家/原则/独立思考</h2>
+      <h3 id="51-成长上限取决于你接触过的最高标准">5.1 成长上限取决于你接触过的最高标准</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@shaozhu93314：一个人的成长上限不太取决于主观用力程度，而是取决于见过的最高标准。长期在低标准环境里，人会把含糊当正常、把完成当结果、把不复盘当结束；见过更清晰的表达、更严谨的流程后，参考系会被重新校准。</li>
+      <li><strong>关键方法/工具：</strong>主动接触高标准样本。</li>
+      <li><strong>可行动点：</strong>每周挑一份顶级作品（演讲、代码、文章）拆解它的标准，对照自己的产出。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/shaozhu93314/status/2121519492358639773" target="_blank" rel="noopener noreferrer">https://x.com/shaozhu93314/status/2121519492358639773</a></li>
+      <li><strong>来源标注：</strong>【账号池】@shaozhu93314</li>
+      </ul>
+      <h3 id="52-自举能到-5000-万-arr到-5-亿要融资">5.2 自举能到 5000 万 ARR，到 5 亿要融资</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Bencera：自举做到 5000 万美元 ARR 完全可以，但 5 亿以上几乎没有先例，某种程度的野心需要融资。他另发「2026 年 AI 创业者要做的 5 件事」（需点开看内容）。</li>
+      <li><strong>关键方法/工具：</strong>融资与野心的匹配。</li>
+      <li><strong>可行动点：</strong>一人公司先想清楚天花板目标，再决定要不要引入资本。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Bencera/status/2121436010357948425" target="_blank" rel="noopener noreferrer">https://x.com/Bencera/status/2121436010357948425</a> ；<a href="https://x.com/Bencera/status/2121733898292109586" target="_blank" rel="noopener noreferrer">https://x.com/Bencera/status/2121733898292109586</a></li>
+      <li><strong>来源标注：</strong>【账号池】@Bencera</li>
+      </ul>
+      <h3 id="53-理想主义者的宿命-做-founder-ip-的心态">5.3 理想主义者的宿命 &amp; 做 Founder IP 的心态</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@Svwang1：理想主义者先被利用（太好用），后被抛弃（太不现实）。@lifesinger：做 Founder IP 最好的心态是不把自己当 Founder、也不想着做 IP，把 X 当公开记事本，想发就发，关键是要发。</li>
+      <li><strong>关键方法/工具：</strong>持续公开记录。</li>
+      <li><strong>可行动点：</strong>把每日简报里的一条心得顺手发成推文，低压力持续输出。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Svwang1/status/2121609249411482093" target="_blank" rel="noopener noreferrer">https://x.com/Svwang1/status/2121609249411482093</a> ；<a href="https://x.com/lifesinger/status/2121489657745797361" target="_blank" rel="noopener noreferrer">https://x.com/lifesinger/status/2121489657745797361</a></li>
+      <li><strong>来源标注：</strong>【账号池】@Svwang1、@lifesinger</li>
+      </ul>
+      <hr>
+      <h2 id="6-身心整合终身学习超级个体补充">6. 身心整合/终身学习/超级个体补充</h2>
+      <h3 id="61-ai-时代的元能力改写下意识的第一反应">6.1 AI 时代的元能力：改写下意识的第一反应</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@LotusDecoder：AI 时代的元能力之一是「修改下意识第一反应」，像推理模型的 Aha Moment——「wait, wait, wait」。有了它，人的自主性会更大，能快速适应外部变化，以前拖延的事也能很快上手。</li>
+      <li><strong>关键方法/工具：</strong>觉察第一反应 → 暂停 → 改写。</li>
+      <li><strong>可行动点：</strong>下次想拖延时，先说一句「等等」，再问自己真正该做的第一步是什么。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/LotusDecoder/status/2121429097318674640" target="_blank" rel="noopener noreferrer">https://x.com/LotusDecoder/status/2121429097318674640</a></li>
+      <li><strong>来源标注：</strong>【账号池】@LotusDecoder</li>
+      </ul>
+      <h3 id="62-adhd-与早期压力gabor-maté-的视角">6.2 ADHD 与早期压力：Gabor Maté 的视角</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@alexeixbt 分享 Gabor Maté 的观点：真正的注意力缺陷很少只是遗传病，早期压力、环境和情绪失调会塑造发育中的大脑；另一条介绍 Alok Kanojia 医生拆解 ADHD 的时间盲、执行功能障碍、情绪问题背后的神经科学。</li>
+      <li><strong>关键方法/工具：</strong>从环境和情绪调节角度理解注意力问题。</li>
+      <li><strong>可行动点：</strong>对注意力问题感兴趣的，可以看这两段视频作为入门，不替代专业诊断。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/alexeixbt/status/2121593777999552958" target="_blank" rel="noopener noreferrer">https://x.com/alexeixbt/status/2121593777999552958</a> ；<a href="https://x.com/alexeixbt/status/2121625221501223070" target="_blank" rel="noopener noreferrer">https://x.com/alexeixbt/status/2121625221501223070</a></li>
+      <li><strong>来源标注：</strong>【账号池】@alexeixbt</li>
+      </ul>
+      <h3 id="63-用-google-ai-ultra-送的-1000-colab-算力点">6.3 用 Google AI Ultra 送的 1000 Colab 算力点</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps：很多人开了 Google AI Ultra 只用 Gemini 和 Claude，忽略了会员赠送的 1000 个 Colab 计算点，相当于一笔云端 GPU 额度，可以跑各种开源 AI 模型；另一条列了 Ultra 的十项会员福利（Antigravity、Flow 视频等）。</li>
+      <li><strong>关键方法/工具：</strong>Colab 计算点、Google AI Ultra。</li>
+      <li><strong>可行动点：</strong>已经订了 Ultra 的，用这批算力跑一次开源模型实验，别让它过期。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2121610789471895879" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2121610789471895879</a> ；<a href="https://x.com/xiaomovps/status/2121630149565399538" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2121630149565399538</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps</li>
+      </ul>
+      <hr>
+      <h2 id="7-媒体工具其他">7. 媒体/工具/其他</h2>
+      <h3 id="71-starship-首次被发射塔夹住">7.1 Starship 首次被发射塔夹住</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Flight 15 的 Ship 42 在太空 22 小时、绕地 14 圈、部署 26 颗 Starlink V3，再入后被 Mechazilla 塔架接住。SpaceX 的 Dan Huot：「我们接住了一艘星舰，一切都变了。」Sundar Pichai 祝贺「仍然像科幻」。@mylifeonmystyle 冷静补充：两级分别回收已实现，但同一次发射两级都回收尚未实现（本次一级 Booster 22 回收失败），快速低成本复用仍待验证。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>关注下次飞行能否同一次回收两级。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/XFreeze/status/2121716670909780114" target="_blank" rel="noopener noreferrer">https://x.com/XFreeze/status/2121716670909780114</a> ；<a href="https://x.com/sundarpichai/status/2121721987794174178" target="_blank" rel="noopener noreferrer">https://x.com/sundarpichai/status/2121721987794174178</a> ；<a href="https://x.com/mylifeonmystyle/status/2121719862170919061" target="_blank" rel="noopener noreferrer">https://x.com/mylifeonmystyle/status/2121719862170919061</a></li>
+      <li><strong>来源标注：</strong>【账号池】@XFreeze、@sundarpichai、@mylifeonmystyle</li>
+      </ul>
+      <h3 id="72-sightless用语音让-ai-操作整台-iphone">7.2 Sightless：用语音让 AI 操作整台 iPhone</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@BenjaminBadejo 宣布 Sightless 周一起可绕过 App Store 直接下载到 iPhone/iPad，用 GPT-6/6.1 和实时语音模型在所有 iOS App 内及跨 App 操作，面向能用声音但行动不便的人群。</li>
+      <li><strong>关键方法/工具：</strong>语音 + 手机操作 Agent。</li>
+      <li><strong>可行动点：</strong>关注上线后的实测，手机端 Agent 是值得跟踪的方向。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/BenjaminBadejo/status/2121742541875749199" target="_blank" rel="noopener noreferrer">https://x.com/BenjaminBadejo/status/2121742541875749199</a></li>
+      <li><strong>来源标注：</strong>【账号池】@BenjaminBadejo</li>
+      </ul>
+      <h3 id="73-混乱的一周黄仁勋离职等一图回顾">7.3 混乱的一周（黄仁勋离职等）一图回顾</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@cuichenghao 总结这周：黄仁勋因绯闻辞职、微软 Outlook 全球宕机、全美飞机停飞、BTC 跌破 6.4 万，最后星舰夹回。@dongxi_nlp 批评 Dwarkesh 的类比，认为黄仁勋那句「lousy analogy」很准确。以上为观点/汇总，事实以原始报道为准。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>作为本周大事索引，按需点原始报道核实。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/cuichenghao/status/2121754842209161364" target="_blank" rel="noopener noreferrer">https://x.com/cuichenghao/status/2121754842209161364</a> ；<a href="https://x.com/dongxi_nlp/status/2121721606699659581" target="_blank" rel="noopener noreferrer">https://x.com/dongxi_nlp/status/2121721606699659581</a></li>
+      <li><strong>来源标注：</strong>【账号池】@cuichenghao、@dongxi_nlp</li>
+      </ul>
+      <hr>
+      <p><em>本期由 AI圈每日简报自动整理；条目按原帖可见内容转述，细节以原帖为准。</em></p>
+      <p class="brief-end">
+        <a href="2026-11-14.html">较早一天</a>
+        <a href="../index.html">返回目录</a>
+        <a href="2026-11-15.md">Markdown 原文</a>
+      </p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>凯旋 · AI圈每日简报</p>
+    <p><a href="https://github.com/kaixuan94/ai-daily-briefing">GitHub 仓库</a></p>
+  </footer>
+</body>
+</html>
