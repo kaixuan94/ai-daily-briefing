@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161310" media="(prefers-color-scheme: dark)">
+  <title>AI圈每日简报 · 2026-11-24 — 凯旋</title>
+  <meta name="description" content="2026-11-24 AI圈每日简报，7 个分类，38 条精选。">
+  <link rel="canonical" href="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-24.html">
+  <meta property="og:title" content="AI圈每日简报 · 2026-11-24 — 凯旋">
+  <meta property="og:description" content="2026-11-24 AI圈每日简报，7 个分类，38 条精选。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kaixuan94.github.io/ai-daily-briefing/briefs/2026-11-24.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">简</span>
+        <span>
+          <span class="brand-name">凯旋</span>
+          <span class="brand-sub">AI圈每日简报</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="站点">
+        <a href="../index.html">目录</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+    <article class="brief">
+      <h1 id="ai圈每日简报-2026-11-24">AI圈每日简报 · 2026-11-24</h1>
+      <blockquote>
+      <p>时间窗：2026-11-23 09:24 至 2026-11-24 09:20（香港时间）
+      监控范围：账号池 <code>ai_monitor_accounts.md</code>（304 个去重手柄，含 5 位核心 KOL）。5 位核心 KOL 单独检索（含回复，翻到窗口起点为止）；其余 299 个手柄按 15 人一批分 20 批做 <code>from:</code> 检索（排除转推和回复），高频批次先翻 2 页，再对刷屏账号做排除后补查，最拥挤的两批做了第二轮排除，去重后窗口内 1149 帖（来自 186 个账号）进入候选。
+      覆盖说明：黄仁勋回归英伟达 CEO 占据了大量互动，市场情绪帖和纯转发已按「无信息增量」过滤。部分高频账号只抓到部分时段（如 @JMkernt、@swordBluesy、@Crypto_146827、@APompliano），同批其他账号已排除这些账号后补查。亦仁 @yiren_ai 窗口内没有发帖。交叉参考了 aitimeline.news 11/24 中文选题、英文选题与日报，仍以账号池和 KOL 原帖为准。今天的主线是：黄仁勋在辞职约 10 天后回归英伟达 CEO；OpenAI 连发 OpenWorks、开源运行时 Shirudo，并披露 GPT-6 Cyber 验证了 948 个 Linux 内核漏洞；Anthropic 推出 Claude Ship（Team/Enterprise 测试）并把连接器和技能收成插件；智谱 GLM-5.4 对编程订阅用户开放；范凯从「用 T3 Code 接 Neon」改成自研 Paseo-Antigravity 插件。
+      核心 KOL 覆盖：范凯 @fankaishuoai（T3 Code 与 Paseo 对比、自研 Paseo-Antigravity 插件、GPT-6.2 Astra 翻车、黄仁勋回归评论、「大机器零件 vs 自我造血小机器」，入报）；Sac @Saccc_c（OiiOii Motion 代码生动画教程、「躺着也能 vibe coding」的产品推荐，入报）；Bruce Qin @qzhxjhj（从「不必社交」改口、回归身体与现场表现力、美股波动「币圈化」、链上活动冷清，入报）；身心修复局 @MindfulReturn（magpie 里 zenmux 的 Gemini Neon 更稳，入报；收购猜测与股票口号未达信息增量标准，未单独成条）；亦仁 @yiren_ai（窗口内无发帖，未入报）。
+      投资相关内容仅为转述，不构成投资建议。</p>
+      </blockquote>
+      <h2 id="今日三件事">今日三件事</h2>
+      <ol>
+      <li><strong>黄仁勋回归英伟达 CEO：</strong>窗口内最大事件。@dotey 转述董事会决定：恢复黄仁勋的总裁、CEO 和董事职务并即刻生效，距离他辞职约 10 天；董事会称做决定前听取了美国政府高层意见，认为回归不构成国家安全风险。有账号称复职消息公布后股价盘前一度大涨约 26%–30%（具体以行情为准）。@dingyi 补充：英伟达开始招聘向提名与公司治理委员会汇报的首席合规官，并认为董事会成员不会被立刻换掉。</li>
+      <li><strong>OpenAI 连发三条：</strong>官方账号推出 OpenWorks，出资请本地 AI 专家免费帮美国小企业做可留下的工具和技能；开源 Linux 运行时 Shirudo，让 Agent 用 eBPF 在不停机的情况下给系统加临时防护；研究帖称一次运行中，GPT-6 Cyber 帮助验证了 948 个可拿到本地 root 的 Linux 内核漏洞，并生成供审查的补丁。</li>
+      <li><strong>Claude 开始「把 PR 运出去」，中文圈则在换 Gemini 接口：</strong>@bcherny 宣布 Claude Ship 对 Team/Enterprise 开放测试，理由是模型写代码已经跟得上，合并和发布还没有；@claudeai 把连接器和技能收成统一的插件目录。中文侧，范凯早上还说「用 Gemini 4 Neon 的最佳姿势是 T3 Code」，晚上就自己用 GPT-6 Astra 写了 Paseo-Antigravity 插件，改口回 Paseo，并强调走 ACP、自称没有封号风险。</li>
+      </ol>
+      <nav class="toc" aria-label="目录"><h2 id="目录">目录</h2>
+      <ol>
+      <li><a href="#1-ai公司官方核心研究者与工程师">AI公司/官方/核心研究者与工程师</a></li>
+      <li><a href="#2-中文ai落地独立开发一人公司opc超级个体">中文AI落地/独立开发/一人公司(OPC)/超级个体</a></li>
+      <li><a href="#3-ai视频生成工具创意内容">AI视频/生成工具/创意内容</a></li>
+      <li><a href="#4-cryptoweb3投资交易">Crypto/Web3/投资/交易</a></li>
+      <li><a href="#5-思想家原则独立思考">思想家/原则/独立思考</a></li>
+      <li><a href="#6-身心整合终身学习超级个体补充">身心整合/终身学习/超级个体补充</a></li>
+      <li><a href="#7-媒体工具其他">媒体/工具/其他</a></li>
+      </ol></nav>
+      <h2 id="1-ai公司官方核心研究者与工程师">1. AI公司/官方/核心研究者与工程师</h2>
+      <h3 id="11-黄仁勋在辞职约-10-天后回归英伟达-ceo">1.1 黄仁勋在辞职约 10 天后回归英伟达 CEO</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dotey 根据公开信息整理：英伟达董事会宣布全票恢复黄仁勋的总裁、CEO 和董事职务，即刻生效，距离 11 月 12 日辞职约 10 天。董事会的说法是，做决定前听取了美国政府高层意见，认为他回来不会带来国家安全风险。黄仁勋回到总部的讲话被中文圈广泛转发，大意是「今天是我上班的第一天」「非常抱歉让你们经历这一切」。@dingyi 补充了三点观察：政府高层介入了；公司开始招聘首席合规官，向提名与公司治理委员会汇报，他据此判断「以后国内想拿到显卡更难了」；董事会成员短期内不会被清掉——这与部分英文账号「必须撤换整个董事会」的呼吁并不一致。股价反应激烈，但具体涨幅以行情软件为准，简报不采用未核验的「市值瞬间增加数万亿美元」这类表述。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>把这条当成产业事件而不是交易信号：关注合规官人选和出口管制口径，比复读「王者归来」更有用。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2124900260925296807" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2124900260925296807</a> ；<a href="https://x.com/dotey/status/2125005196648431731" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2125005196648431731</a> ；<a href="https://x.com/dingyi/status/2124871985209745727" target="_blank" rel="noopener noreferrer">https://x.com/dingyi/status/2124871985209745727</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dotey、@dingyi</li>
+      </ul>
+      <h3 id="12-openai-openworks出资请本地专家教小企业用-ai">1.2 OpenAI OpenWorks：出资请本地专家教小企业用 AI</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@OpenAI 宣布新项目 OpenWorks：由公司出资，请喜欢教学的本地 AI 专家，免费帮助小企业做出能留下来的工具和技能。交叉参考官方页面（aitimeline 已核）的要点是：专家每月要直接服务本地企业并办一次社区工作坊，津贴上限为每月 8,000 美元；对企业免费，并附赠三个月 ChatGPT Business；试点面向美国独立经营的小企业，软件/SaaS、接受过风投或私募控股的公司不符合条件；试点社区为 20 个。8,000 美元是上限不是人均承诺，页面上的成功案例属于宣传材料。</li>
+      <li><strong>关键方法/工具：</strong>OpenWorks；ChatGPT Business 三个月试用。</li>
+      <li><strong>可行动点：</strong>如果你在美国且同时具备教学能力和本地小企业网络，可以去看官方报名页；不要把「每月 8,000 美元」写成稳到手的收入。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/OpenAI/status/2124922133545714160" target="_blank" rel="noopener noreferrer">https://x.com/OpenAI/status/2124922133545714160</a></li>
+      <li><strong>来源标注：</strong>【账号池】@OpenAI</li>
+      </ul>
+      <h3 id="13-shirudo让-agent-用-ebpf-给运行中的系统加临时盾gpt-6-cyber-验证-948-个内核漏洞">1.3 Shirudo：让 Agent 用 eBPF 给运行中的系统加临时盾；GPT-6 Cyber 验证 948 个内核漏洞</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@OpenAI 发布开源 Linux 运行时 Shirudo，让 Agent 编写动态的 eBPF 控制，在服务不停机的情况下阻挡利用尝试，给防守方争取打补丁的时间。交叉参考官方博客的细节是：先观察盾对应用的影响，再由人批准部署；盾在加载前要做密码学签名校验，并走内核 eBPF 验证器；主项目是 BSD 2-Clause。已公开的实测仍只有一个受控场景（给运行中的 Elasticsearch 加上对 Java4Shell 的输入检查）。同一天另一条研究帖称：一次运行中，GPT-6 Cyber 帮助验证了 948 个可拿到本地 root 的 Linux 内核漏洞，并生成供审查的补丁，研究者还与维护者协作把修复合入上游。</li>
+      <li><strong>关键方法/工具：</strong>Shirudo；eBPF；GPT-6 Cyber。</li>
+      <li><strong>可行动点：</strong>安全或平台工程可以先看仓库和 quickstart，把它理解成「经人批准的临时缓解」，而不是全自动防御。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/OpenAI/status/2124980590717911527" target="_blank" rel="noopener noreferrer">https://x.com/OpenAI/status/2124980590717911527</a> ；<a href="https://x.com/OpenAI/status/2125007927098699827" target="_blank" rel="noopener noreferrer">https://x.com/OpenAI/status/2125007927098699827</a></li>
+      <li><strong>来源标注：</strong>【账号池】@OpenAI</li>
+      </ul>
+      <h3 id="14-claude-ship-进入-teamenterprise-测试连接器和技能合并为插件zdr-兼容的企业防护进入公测">1.4 Claude Ship 进入 Team/Enterprise 测试；连接器和技能合并为插件；ZDR 兼容的企业防护进入公测</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@bcherny 说，一年前 Opus 4.5 已经能写他 100% 的代码，但「把 PR 运出去」还没跟上，所以今天推出 Claude Ship（Team 和 Enterprise 测试）。他自称自己整天都在用。官方文档把动作拆得更细（aitimeline 交叉参考，非本窗口账号池原文）：Code Review 已正式可用；PR Steward 是测试版，明确不批准也不合并；Claude Approvals 按仓库里的 policy 检查，只有把它设成 required check 才会挡住合并；若同时开了 GitHub auto-merge，且 policy 不要求人工批准，变更可能在没人操作的情况下合并。同一天 @claudeai 宣布连接器和技能合并为插件，Free/Pro/Max/Ultra 可用，Team 和 Enterprise 即将跟上，目录入口在 claude.ai/plugins。另外，零数据保留（ZDR）配合 Enterprise Frontier Safeguards（EFS）对符合条件的企业进入公开测试，官方称已与 100 多家客户一起开发，用于在兼容 ZDR 的前提下跨请求查找滥用。</li>
+      <li><strong>关键方法/工具：</strong>Claude Ship；claude.ai/plugins；ZDR + EFS。</li>
+      <li><strong>可行动点：</strong>想试 Ship 的团队，先把「审查、修复、批准、合并」四件事写成仓库 policy，不要默认它会自动合并。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/bcherny/status/2124961485801836573" target="_blank" rel="noopener noreferrer">https://x.com/bcherny/status/2124961485801836573</a> ；<a href="https://x.com/claudeai/status/2124970294523945328" target="_blank" rel="noopener noreferrer">https://x.com/claudeai/status/2124970294523945328</a> ；<a href="https://x.com/claudeai/status/2124929944530587712" target="_blank" rel="noopener noreferrer">https://x.com/claudeai/status/2124929944530587712</a></li>
+      <li><strong>来源标注：</strong>【账号池】@bcherny、@claudeai</li>
+      </ul>
+      <h3 id="15-智谱-glm-54loop-transformer-旗舰对编程订阅用户开放额度提高到-15-倍">1.5 智谱 GLM-5.4：Loop Transformer 旗舰，对编程订阅用户开放，额度提高到 1.5 倍</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dotey 转述：GLM-5.4 已向所有 GLM Coding Plan 用户开放，新增看图能力，官方称编程能力提升；有周额度的用户，可用量比 GLM-5.3 多 50%。官方口径（aitimeline 已核技术博客）是：这是智谱首个 Loop Transformer 旗舰，把已预训练的 GLM-5 基座中 28 层循环跑两遍、权重点享，规模约 750B；「相当于 2T–3T 参数模型」是厂商自述，窗口内未见官方完整评测表；API 和权重都还没开放。@oran_ge 的体感是「比 Gemini 4 Carbon 还慢」。@LotusDecoder 用 FrontierHarness 连夜评测后说，自己跑出来的成绩远低于 9 月的 GLM-5.3，评测耗约 4.17 亿 token，按 5.3 价格约 150 美元，并提醒环境已换成各家最新 Agent CLI。这是个人评测，不是第三方正式榜。</li>
+      <li><strong>关键方法/工具：</strong>GLM-5.4；Coding Plan（官方建议在 Claude Code 里设 <code>glm-5.4[1m]</code>）。</li>
+      <li><strong>可行动点：</strong>订阅用户可以先拿自己的真实任务试，不要只看「2T–3T」或单次自测排名；速度和费用一并记。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2124726140023537849" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2124726140023537849</a> ；<a href="https://x.com/oran_ge/status/2124829423669330149" target="_blank" rel="noopener noreferrer">https://x.com/oran_ge/status/2124829423669330149</a> ；<a href="https://x.com/LotusDecoder/status/2125028263110262832" target="_blank" rel="noopener noreferrer">https://x.com/LotusDecoder/status/2125028263110262832</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dotey、@oran_ge、@LotusDecoder</li>
+      </ul>
+      <h3 id="16-论文qwen35-27b-在单卡上改自己的权重数学准确率从-572-升到-638">1.6 论文：Qwen3.5 27B 在单卡上改自己的权重，数学准确率从 57.2% 升到 63.8%</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dotey 介绍 UIUC、CMU、普林斯顿、斯坦福、耶鲁等校 11 位研究者 11 月 18 日挂在 arXiv 的论文。他们禁用训练工具，只用单块 GPU 跑几小时，让开源模型 Qwen3.5 27B 写 Python 修改自身权重。作者认为「模型自己改自己」还是头一回。模型复盘后发现，毛病往往不是不会算（写完的题 96% 都对），而是爱钻牛角尖、没说完就超限；它把 48 层里控制「旧信息消退快慢」的参数统一调高 0.5。结果在 490 道未见过的数学题上，未答完率从 33.6% 降到 26.1%，准确率提升 6.6 个百分点。它还能修「受损副本」：第 30 层一个矩阵被写入 200 倍幅度噪声后数学变为 0 分，模型在只知道「有数值坏了」的情况下把极端值压平，数学恢复到 33.0%（原版 58.5%），6 项看图测试从 7.3% 恢复到 70.2%。小模型做不到：2B 拒绝动手，9B 乱加噪声后把自己从 47.5% 改成 0 分。@dotey 特别强调，这还不是递归自我进化——8 轮实验每次都从原版重新开始；网上说的「连续 8 轮只升不降」，其实是模型撤回了 5 次失败改动、只提交了 3 次成功改动。论文尚在 arXiv，未同行评审，目前主要在 Qwen3.5 家族和数学题上验证。</li>
+      <li><strong>关键方法/工具：</strong>模型写代码直接改权重；针对「消退速度」参数的小改动。</li>
+      <li><strong>可行动点：</strong>引用前请打开原论文和项目页（链接在原帖里），不要写成「AI 已经开始无限自我进化」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2124775538648633370" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2124775538648633370</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dotey</li>
+      </ul>
+      <h3 id="17-inkling-2-mini-在-macbook-上跑本地不烫号称无限额度">1.7 Inkling 2 Mini 在 MacBook 上跑：本地、不烫、号称无限额度</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@AlexFinn 在 16GB 以上内存的 MacBook Pro 上跑 Thinking Machines 的 Inkling 2 Mini，说内存没用到一半、机身仍然冰凉，正在 24 小时写代码和抓网页。他的评价是：不是前沿模型，但对「完全不限量」的本地模型来说质量已经很好，并称「美国开源回来了」。视频里的加载工具是他自制的一键 harness，他在问要不要开源。这是个人演示，不是官方基准；「Opus 4.6 级别」是作者体感。</li>
+      <li><strong>关键方法/工具：</strong>Inkling 2 Mini；本地 harness。</li>
+      <li><strong>可行动点：</strong>有 16GB 及以上内存的人可以自己装来当「无限额度的边路模型」，不要把它当成旗舰替身。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/AlexFinn/status/2124747542566977889" target="_blank" rel="noopener noreferrer">https://x.com/AlexFinn/status/2124747542566977889</a></li>
+      <li><strong>来源标注：</strong>【账号池】@AlexFinn</li>
+      </ul>
+      <h2 id="2-中文ai落地独立开发一人公司opc超级个体">2. 中文AI落地/独立开发/一人公司(OPC)/超级个体</h2>
+      <h3 id="21-范凯用-gemini-4-neon-的最佳姿势从-t3-code-改回自研-paseo-插件核心-kol">2.1 范凯：用 Gemini 4 Neon 的最佳姿势，从 T3 Code 改回自研 Paseo 插件（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>同一天里范凯改了两次口，信息量在过程本身。上午他确认用 T3 Code 经 OAuth 接上 Antigravity，认为「更接近原生、比 ACP 丝滑」，并提到「据说 12 月 2 日 Hermes 也可以原生接入 Gemini 订阅」。下午他对比界面和功能完整度，说 T3 Code 相对 Paseo「就是一个糙哥」，优点只剩下更接近原生、以及更轻更快；在 Pi Agent 还不能原生接入 Gemini 订阅之前，他仍觉得只能先用 T3。晚上他受不了粗糙，花一两小时让 GPT-6 Astra 写了新的 Paseo-Antigravity 插件（GPT-6.2 Astra 在同一任务上「烂出了天际」，换回 GPT-6 Astra 才写完），称体验远超 Paseo 默认 ACP Provider、与 T3 基本一致，而且「绝对纯正的 ACP 方式，没有封号风险」。安装路径：Paseo → Settings → Plugins → Plugin source，填写他帖里的源地址（待上架插件市场）。他同时强调 Paseo 已有多 provider、多设备、多 session，以及复制 session 生成平行 session 的能力。关于「T3 会不会被封」，窗口内仍是工程师个人表态与条款风险并存，不宜写成官方承诺。</li>
+      <li><strong>关键方法/工具：</strong>Paseo-Antigravity 插件（ACP）；T3 Code（OAuth 原生接入）。</li>
+      <li><strong>可行动点：</strong>已经在用 Paseo 的人可以直接装这个插件试 Neon；还没选定客户端的人，先分清「原生 OAuth」和「ACP」两条路径，不要把主力账号押在任何「不会封」的口头保证上。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2124720357022314853" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2124720357022314853</a> ；<a href="https://x.com/fankaishuoai/status/2124879026443718787" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2124879026443718787</a> ；<a href="https://x.com/fankaishuoai/status/2124929573251117319" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2124929573251117319</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@fankaishuoai</li>
+      </ul>
+      <h3 id="22-小莫gemini-和-antigravity-额度是分开的会员至少有三条官方用法">2.2 小莫：Gemini 和 Antigravity 额度是分开的，会员至少有三条官方用法</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps 发现很多人买了 Google AI 会员，却不知道 Gemini 网页/App 与 Antigravity 的额度分开计算——这边深度研究掉得很快，切到 Antigravity 往往还剩一大截。他补充了三条官方原生路径：Gemini App 处理移动端即问即答；电脑打开 Antigravity 用遥控器模式，手机当遥控器发任务；在 Antigravity 里建 Remote Project 接上 GitHub 仓库，电脑关机后也能在手机上看进度、把额度用到云端。私有知识库接入前要先检查仓库里有没有明文密钥。@dotey 当天也观察到：Antigravity 又重置了额度；Gemini Pro 订阅在 Antigravity 里已经可以用 Carbon，但 Gemini 网页似乎还不行。港区/改区后出现 Starter Quota、登不进 Antigravity 的踩坑，在中文圈也有讨论，买之前应先核官方支持地区。</li>
+      <li><strong>关键方法/工具：</strong>Gemini App；Antigravity 遥控器 / Remote Project。</li>
+      <li><strong>可行动点：</strong>先在两个产品里分别看剩余额度，再按「手机查资料 / 电脑改文件 / 远程挂任务」把额度拆开用，而不是只砸在一个窗口里。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2124716522858012721" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2124716522858012721</a> ；<a href="https://x.com/dotey/status/2124998487221694583" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2124998487221694583</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps、@dotey</li>
+      </ul>
+      <h3 id="23-小莫横评-6-款-personal-agent先按场景选不要抄别人的主力栈">2.3 小莫横评 6 款 Personal Agent：先按场景选，不要抄别人的主力栈</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps 近两三个月几乎把主流产品用了一遍：先在 VPS 上搭 Hermes Agent，嫌维护成本高切到 Grok Bot（从 100 美元用到 30 美元档），中间一直留着 Meta Muse，又测了开源的 OpenBot、OpenMausBot 和 OpenClaw。结论是没有一款通吃。他对号入座：重度运营 X 用 Grok Bot（原生打通 X，不必另开 X API，重要数据同步到 GitHub，防止云电脑重置）；生活向、打电话/邮件/浏览器/生图生视频，看 Meta Muse；有 VPS、看重长期记忆和自维护，用 Hermes；手里订阅多、想数据自管，在 OpenBot / OpenMausBot 里选（注意协议和中转网络）；看重插件生态且懂 Docker，再考虑 OpenClaw，建议放沙箱。他自己目前是混用：30 美元的 Grok Bot 管 X 和验收，大任务分流给 Pi 和 Codex，服务器上留 Hermes 跑长任务，再留一个 Muse 备用。</li>
+      <li><strong>关键方法/工具：</strong>Grok Bot；Hermes；Meta Muse；OpenBot / OpenMausBot；OpenClaw。</li>
+      <li><strong>可行动点：</strong>先写下自己最高频的三个场景，再决定主力；把核心知识库和记忆放在自己能迁走的地方。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2124743013595504974" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2124743013595504974</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps</li>
+      </ul>
+      <h3 id="24-多-agent-为什么经常拼不出能看的结果回看-cognition-的dont-build-multi-agents">2.4 多 Agent 为什么经常拼不出能看的结果：回看 Cognition 的《Don't Build Multi-Agents》</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps 用自己反复踩坑的体感，重读 Devin 团队这篇文章，抓住三条：共享上下文必须是完整执行轨迹，而不只是几句任务描述；每个动作都隐含决策，并行时子 Agent 互相看不见，拼在一起画风和逻辑会冲突（文中用 Flappy Bird 的背景和小鸟举例）；现阶段宁可单线程保持上下文连续，上下文撑爆了再压缩，也不要硬上失控的并行。他观察到 Claude Code 对子 Agent 也很克制，只用来查资料，绝不并行写代码。他自己的做法是：要么新开一个 Agent 单独做完一件事，要么只用一个 Agent 从 0 到 1；上下文不够就保留节点再新开，或压缩后继续。</li>
+      <li><strong>关键方法/工具：</strong>Cognition《Don't Build Multi-Agents》；单线程 + 历史压缩。</li>
+      <li><strong>可行动点：</strong>下次想「开五个 Agent 一起写」之前，先问：它们能不能看到彼此的完整轨迹？不能就不要并行写同一份产物。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2124820080215441660" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2124820080215441660</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps</li>
+      </ul>
+      <h3 id="25-丁一开源方案让整个团队共用一套-claude-code-配置和未完成会话">2.5 丁一：开源方案让整个团队共用一套 Claude Code 配置和未完成会话</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dingyi 看到一个开源方案后觉得思路对：整个团队共用一个 Claude Code，文件、Skills、MCP 配一次大家都能用，同事做到一半的会话也能接着用；可自部署、不限人数。这是转发推荐，具体项目名和部署方式以原帖链接为准。</li>
+      <li><strong>关键方法/工具：</strong>共享文件系统 + Skills/MCP + 可续接的会话。</li>
+      <li><strong>可行动点：</strong>小团队如果已经在为「每人单独配一套 MCP、上下文接不上」发愁，可以先点开原帖看项目是否满足安全和权限隔离。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dingyi/status/2124700039151034385" target="_blank" rel="noopener noreferrer">https://x.com/dingyi/status/2124700039151034385</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dingyi</li>
+      </ul>
+      <h3 id="26-木子deepseek-harness大肥鱼零基础系统教程">2.6 木子：DeepSeek Harness（大肥鱼）零基础系统教程</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@ai_muzi 发布一套从「完全没用过」到「能给一家公司定制专属智能体」的教程，分三层：基础入门（安装登录、如何省钱、认识界面、看懂轨迹）；核心进阶（原理、插件市场、四个模式、自己做插件）。热度不低（收藏 737），适合当作中文上手材料，但「全网最细最全」是作者自称。</li>
+      <li><strong>关键方法/工具：</strong>DeepSeek Harness。</li>
+      <li><strong>可行动点：</strong>还没碰过这套 Harness 的人，可以按「先看懂轨迹和省钱设置，再碰插件」的顺序看完视频。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/ai_muzi/status/2124820505194889599" target="_blank" rel="noopener noreferrer">https://x.com/ai_muzi/status/2124820505194889599</a></li>
+      <li><strong>来源标注：</strong>【账号池】@ai_muzi</li>
+      </ul>
+      <h3 id="27-一辉花-200-美元和-3-天做-seedanceanthropic-ipo-宣传片skillbizpeel-自定义报告上线">2.7 一辉：花 200 美元和 3 天做 Seedance「Anthropic IPO 宣传片」Skill；BizPeel 自定义报告上线</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@yihui_indie 用 200 美元和 3 天时间做了 100 条 Seedance 素材，做成一个 Anthropic IPO 宣传片 Skill，又用同一套流程给 Gemini 4 Neon 出了一条。另外，他的竞品分析产品 BizPeel 上线了「自定义报告」Beta：填网址、扣套餐余额，即可生成增长和 SEO 等方面的专属报告，并用 Higgsfield 跑过样片。</li>
+      <li><strong>关键方法/工具：</strong>Seedance Skill；BizPeel 自定义报告。</li>
+      <li><strong>可行动点：</strong>做内容或产品宣传的人，可以看他如何把批量素材沉淀成可复用 Skill，而不是只看成片。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/yihui_indie/status/2124689559577600095" target="_blank" rel="noopener noreferrer">https://x.com/yihui_indie/status/2124689559577600095</a> ；<a href="https://x.com/yihui_indie/status/2124743802829295871" target="_blank" rel="noopener noreferrer">https://x.com/yihui_indie/status/2124743802829295871</a></li>
+      <li><strong>来源标注：</strong>【账号池】@yihui_indie</li>
+      </ul>
+      <h2 id="3-ai视频生成工具创意内容">3. AI视频/生成工具/创意内容</h2>
+      <h3 id="31-sac用-oiioii-motion-做代码生视频教程核心-kol">3.1 Sac：用 OiiOii Motion 做「代码生视频」教程（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Sac 分享用纯代码制作炫动画和 MG 动效的教程，目标是复现最近很火的「vibe 知识大赏」类动画。工具是 OiiOii Motion，模型组合为 Opus 5.5、GPT Image、ElevenLabs 等，他的判断是：在「代码生视频」这条路上，体验甚至比 Claude 更丝滑。@bbkirstry 随后推荐想靠这类动画在国内社媒起号的人认真看这期。</li>
+      <li><strong>关键方法/工具：</strong>OiiOii Motion；Opus 5.5；GPT Image；ElevenLabs。</li>
+      <li><strong>可行动点：</strong>按视频逐步做一遍，先复现一条短动效，再替换成自己的知识脚本。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Saccc_c/status/2124838849784283207" target="_blank" rel="noopener noreferrer">https://x.com/Saccc_c/status/2124838849784283207</a> ；<a href="https://x.com/bbkirstry/status/2124853809667334428" target="_blank" rel="noopener noreferrer">https://x.com/bbkirstry/status/2124853809667334428</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@Saccc_c ；【账号池】@bbkirstry</li>
+      </ul>
+      <h3 id="32-乐沫沫用-blender-gemini-4-claude-code-做风格化短片set-down-only">3.2 乐沫沫：用 Blender + Gemini 4 + Claude Code 做风格化短片《Set Down Only》</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@lemomo_ai 发布风格化渲染短片《Set Down Only》（只准上落客），用 Blender 做渲染，综合 Gemini 4 和 Claude Code 等模型。故事灵感来自《赛博朋克 2077》，场景是人间与死亡世界交汇处，已死去的 Jackie 和宋昭美相遇——「这方世界，只准上落客」。Sac 也转发了这条。</li>
+      <li><strong>关键方法/工具：</strong>Blender 风格化渲染；Gemini 4；Claude Code。</li>
+      <li><strong>可行动点：</strong>做 AI 短片的人可以看它如何把模型能力放在「渲染和叙事」而不是一键成片上。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/lemomo_ai/status/2124819909645631951" target="_blank" rel="noopener noreferrer">https://x.com/lemomo_ai/status/2124819909645631951</a></li>
+      <li><strong>来源标注：</strong>【账号池】@lemomo_ai</li>
+      </ul>
+      <h3 id="33-视野subcast-加上一键剪高光可发到抖音b-站小红书">3.3 视野：Subcast 加上「一键剪高光」，可发到抖音、B 站、小红书</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@vista8 在 GEO 大会结束后继续迭代 Subcast：增强了高光剪辑，并加上了群友反馈的功能。定位是视频播客一键剪出高光，再分发到抖音、B 站、小红书。他另外分享了远程录播客的做法：腾讯会议连麦投屏、大疆 Mic3 单独录自己的音轨、AirPods 作输入，再用 Codex 把多段约 200MB 的原始音频合并压缩后交给后期。</li>
+      <li><strong>关键方法/工具：</strong>Subcast；Codex 处理多轨音频。</li>
+      <li><strong>可行动点：</strong>自己做长视频或播客的，可以先用「高光剪辑」试一条分发，再决定要不要上完整后期流水线。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/vista8/status/2124702862429315486" target="_blank" rel="noopener noreferrer">https://x.com/vista8/status/2124702862429315486</a> ；<a href="https://x.com/vista8/status/2124814280247877929" target="_blank" rel="noopener noreferrer">https://x.com/vista8/status/2124814280247877929</a></li>
+      <li><strong>来源标注：</strong>【账号池】@vista8</li>
+      </ul>
+      <h3 id="34-小胡把运维监控做成可走进去的-3d-总控室">3.4 小胡：把运维监控做成可走进去的 3D 总控室</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaohu 给自己的服务做运维监控，做着做着做成了一间 3D 总控室：页面打开后镜头从地球轨道降到机房，每台服务器是一个机柜，柜面跳着这一分钟的 CPU、内存和流量；一发版，大厅灯光变红，值班角色会走到设备前。这是可视化演示，不是新的监控协议，但展示了「把枯燥指标做成可感知空间」的做法。</li>
+      <li><strong>关键方法/工具：</strong>3D 场景可视化监控。</li>
+      <li><strong>可行动点：</strong>如果内部监控只有数字面板，可以借鉴「状态变化要用空间和颜色立刻被看见」这一点，不必先上满 3D。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaohu/status/2124861129294004567" target="_blank" rel="noopener noreferrer">https://x.com/xiaohu/status/2124861129294004567</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaohu</li>
+      </ul>
+      <h3 id="35-sac-推荐一款躺着也能-vibe-coding的产品核心-kol">3.5 Sac 推荐：一款「躺着也能 vibe coding」的产品（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>Sac 另发一条称「非常有创新的 AI 产品，以后躺着都能 vibe coding 了」，并附演示。产品细节以原帖媒体为准，窗口内他没有写出完整评测，故只作发现条，不展开功能清单。</li>
+      <li><strong>关键方法/工具：</strong>见原帖演示。</li>
+      <li><strong>可行动点：</strong>对「远程、躺着、语音或移动端编程」感兴趣再点开，先看它到底替代的是哪一步，再决定值不值得换栈。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/Saccc_c/status/2124745808956563528" target="_blank" rel="noopener noreferrer">https://x.com/Saccc_c/status/2124745808956563528</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@Saccc_c</li>
+      </ul>
+      <h2 id="4-cryptoweb3投资交易">4. Crypto/Web3/投资/交易</h2>
+      <h3 id="41-黄仁勋回归后的市场波动美股被形容为越来越币圈化非投资建议">4.1 黄仁勋回归后的市场波动：美股被形容为「越来越币圈化」（非投资建议）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>复职消息公布后，英伟达及相关风险资产出现剧烈波动。@Money_or_Life_X 说过去一小时在买入，并写下「NVDA 158+ 买入、满仓」，这是个人操作记录，不是建议。@qzhxjhj 的评论是：「美股现在这波动还是正规市场吗，怎么越来越币圈化了。」@dingyi 转述有人说股价暴涨近 30%。简报只记录事件和言论，不评估对错，也不给出买卖建议。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>如果要跟踪，用自己的行情源核对价格和成交，不要把社媒上的涨幅数字直接当成交依据。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/qzhxjhj/status/2124875698250944619" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2124875698250944619</a> ；<a href="https://x.com/Money_or_Life_X/status/2124885315978748286" target="_blank" rel="noopener noreferrer">https://x.com/Money_or_Life_X/status/2124885315978748286</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@qzhxjhj ；【账号池】@Money_or_Life_X</li>
+      </ul>
+      <h3 id="42-techflow比特币跌破-55-万美元之后有研报把下一轮牛市推演到ai-泡沫">4.2 TechFlow：比特币跌破 5.5 万美元之后，有研报把下一轮牛市推演到「AI 泡沫」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@TechFlowPost 写道，比特币跌破 5.5 万美元后，市场上有「加密已死」「流动性被 AI 抽干」的情绪。他们介绍 Four Pillars 研究主管 @100y_eth 的万字长文，提出反常识推演：最终给比特币带来下一轮大牛市的，可能恰恰是眼下的 AI 泡沫；文中讨论了 4.5 万至 5.5 万区间附近的结构。这是研报转述，不是已经发生的事实，更不是操作建议。</li>
+      <li><strong>关键方法/工具：</strong>Four Pillars 长文（见原帖）。</li>
+      <li><strong>可行动点：</strong>若阅读，重点看它的资金流向假设能不能被数据证伪，而不是先接受「AI 泡沫救比特币」的结论。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/TechFlowPost/status/2124740641129124216" target="_blank" rel="noopener noreferrer">https://x.com/TechFlowPost/status/2124740641129124216</a></li>
+      <li><strong>来源标注：</strong>【账号池】@TechFlowPost</li>
+      </ul>
+      <h3 id="43-solana-官方推出-ai-基础设施门户重心放到让-agent-自主花钱和干活">4.3 Solana 官方推出 AI 基础设施门户，重心放到「让 Agent 自主花钱和干活」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@TechFlowPost 报道，Solana 官方上线新的 AI 基础设施门户。他们的判断是：以前圈里聊 Solana + AI 大多停在发 meme、炒概念；这次基金会把重心放到让 AI Agent 能自主花钱和干活的底层基建上。具体产品清单以官方页面为准。</li>
+      <li><strong>关键方法/工具：</strong>Solana AI 基础设施门户。</li>
+      <li><strong>可行动点：</strong>做链上 Agent 的人可以先看官方门户收了哪些支付、钱包和运行时接口，再决定是不是概念站。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/TechFlowPost/status/2124776701842583738" target="_blank" rel="noopener noreferrer">https://x.com/TechFlowPost/status/2124776701842583738</a></li>
+      <li><strong>来源标注：</strong>【账号池】@TechFlowPost</li>
+      </ul>
+      <h3 id="44-bruce链上活动冷清别把单个事件和股价涨跌绑死核心-kol-账户池">4.4 Bruce：链上活动冷清，别把单个事件和股价涨跌绑死（核心 KOL / 账户池）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@qzhxjhj 认为「区块链快没有多少活人了」，活动还层层审核，「明年美股正式入熊，你项目还在不在都两说」。这是情绪加判断，不是预测模型。对照来看，@Money_or_Life_X 提醒：不要把单一事件和股价涨跌强行绑定——他举例 Starship 回收成功后 SpaceX 相关价格未必如预期大涨，FSD 15 推送后 TSLA 仍在他写出的价格附近。两条放在一起更有用：市场可以很吵，因果却经常对不上。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>写交易复盘时，把「事件」和「价格」分两行记，先问有没有反例，再写因果关系。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/qzhxjhj/status/2124850824732164607" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2124850824732164607</a> ；<a href="https://x.com/Money_or_Life_X/status/2124825924818567579" target="_blank" rel="noopener noreferrer">https://x.com/Money_or_Life_X/status/2124825924818567579</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@qzhxjhj ；【账号池】@Money_or_Life_X</li>
+      </ul>
+      <h3 id="45-okxchinese-提示本周关注财报核心-pce-和代币解锁">4.5 @okxchinese 提示本周关注财报、核心 PCE 和代币解锁</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@okxchinese 用一张日程图提示：本周有五家公司财报、美国核心 PCE，以及 HUMA 解锁。这是交易日历提醒，不含具体方向判断。同账号也就黄仁勋回归做了产品导流（代币化股票和合约），此处不转述交易工具推荐。</li>
+      <li><strong>关键方法/工具：</strong>宏观与财报日历。</li>
+      <li><strong>可行动点：</strong>做交易计划时把 PCE 和财报时点标进日历，避免把波动全部归因于单一科技新闻。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/okxchinese/status/2124785080464024046" target="_blank" rel="noopener noreferrer">https://x.com/okxchinese/status/2124785080464024046</a></li>
+      <li><strong>来源标注：</strong>【账号池】@okxchinese</li>
+      </ul>
+      <h2 id="5-思想家原则独立思考">5. 思想家/原则/独立思考</h2>
+      <h3 id="51-范凯别再做大机器上昂贵的零件做能自我造血的小机器核心-kol">5.1 范凯：别再做大机器上昂贵的零件，做能自我造血的小机器（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>范凯写道：「耗尽了前半生的努力把自己训练成了一个大机器上昂贵的零件，当大机器不需要你这个零件的时候，你再昂贵，价值也是零。把自己打造成一个可以自我造血的小机器，你会重生的。」放在黄仁勋回归、大公司人事剧烈摇摆的同一天，这句话的对象很清楚：外部平台和雇主可以一夜改规则，能留下的是自己还能转起来的小系统。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>列出自己目前依赖的「大机器」（雇主、平台、单一收入来源），再问哪一件事能在它停摆后的 30 天里仍产生价值。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/fankaishuoai/status/2124797417224900746" target="_blank" rel="noopener noreferrer">https://x.com/fankaishuoai/status/2124797417224900746</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@fankaishuoai</li>
+      </ul>
+      <h3 id="52-bruce曾经觉得不必再和人社交现在改口了核心-kol">5.2 Bruce：曾经觉得不必再和人社交，现在改口了（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@qzhxjhj 回忆 4 月第一次用 Claude Opus 时「惊为天人、瘫坐」，后来甚至发过「和人相处的单位价值不会大于 Claude」。用了这几个月，他要改口：Claude 可以很快吐出大量文字，但他解析不了，那种失重感是「虚无和意义感的脱落」；思考太多会跌到「叹息之墙」。办法是回归身体、训练、做饭，以及重新捡起社交——这些具身体验能给心脏松绑，否则就会被 AI 缠得越来越紧。他补充：和人交流的价值，不必再和「用 AI 自我进化」比大小；关键变成现场表现力。以及一句更松的话：「现在对自己要求不那么高了，放过自己。」</li>
+      <li><strong>关键方法/工具：</strong>用身体和现场社交对冲「只和模型相处」。</li>
+      <li><strong>可行动点：</strong>如果最近也有「只想和模型说话」的漂浮感，先安排一次无法快进的身体活动或当面交谈，再判断是不是真的「不再需要人」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/qzhxjhj/status/2124829810472136813" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2124829810472136813</a> ；<a href="https://x.com/qzhxjhj/status/2124799063887622616" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2124799063887622616</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@qzhxjhj</li>
+      </ul>
+      <h3 id="53-橙色为什么还写公众号而不是只做小红书算法奖励热点长期价值更稀缺">5.3 橙色：为什么还写公众号而不是只做小红书——算法奖励热点，长期价值更稀缺</h3>
+      <ul>
+      <li><strong>核心观点：</strong>有人问 @oran_ge 为什么写公众号而不是做小红书。他的回答：今天大家太喜欢蹭热点，小红书的算法过于奖励热点八卦；AI 让创作效率大幅提升，但没有让「AI 指挥者」的思考深度一起提升。蹭热点、追新词越来越普遍，构建长期价值越来越稀缺。这和当天中文圈被黄仁勋新闻刷屏的状况正好对照。</li>
+      <li><strong>关键方法/工具：</strong>选择奖励「可积累文本」的渠道，而不是只追分发效率。</li>
+      <li><strong>可行动点：</strong>发布前列一个问题：这条内容 30 天后还有没有被检索、被引用的价值？没有就当它是消耗品，有才值得做成可复用的资产。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/oran_ge/status/2124988778217693375" target="_blank" rel="noopener noreferrer">https://x.com/oran_ge/status/2124988778217693375</a></li>
+      <li><strong>来源标注：</strong>【账号池】@oran_ge</li>
+      </ul>
+      <h3 id="54-alexandr-wang-补充超级智能这条路并非不可避免">5.4 Alexandr Wang 补充：超级智能这条路并非不可避免</h3>
+      <ul>
+      <li><strong>核心观点：</strong>在前一天长文《Superintelligence is Arriving》引发热议之后，@alexandr_wang 补充：他所说的许多判断，其他实验室负责人也说过；他真正想强调的是「这条路并非不可避免」，领导和领导力比以往更重要。这是对原文「不能接受把社会移交给 AI、行业需要换一条路」的再确认，而不是新的技术论证。</li>
+      <li><strong>关键方法/工具：</strong>—</li>
+      <li><strong>可行动点：</strong>读他的原文时，把「智力已不是瓶颈」和「默认路径可以被拒绝」分成两句来看，不要只转前半句。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/alexandr_wang/status/2124719968499777546" target="_blank" rel="noopener noreferrer">https://x.com/alexandr_wang/status/2124719968499777546</a></li>
+      <li><strong>来源标注：</strong>【账号池】@alexandr_wang</li>
+      </ul>
+      <h3 id="55-晚10-条关于商业选择与人的思考节选">5.5 晚：10 条关于商业、选择与人的思考（节选）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@bbkirstry 列了 10 条思考，开头两条就有增量：有些生意看起来在赚钱，实际上在透支你获得其他利益的机会，赚钱本身也可能让人越来越难转型；真正顶级的战略，应该能帮你决定今天不做什么——一个只会让你看到更多可能性、却无法帮你取舍的宏大规划，只会让你更忙。</li>
+      <li><strong>关键方法/工具：</strong>用「今天不做什么」检验战略是否真的在做选择。</li>
+      <li><strong>可行动点：</strong>把正在做的项目按「它封上了哪条别的路」列一遍，再决定要不要继续加码。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/bbkirstry/status/2124848648848843259" target="_blank" rel="noopener noreferrer">https://x.com/bbkirstry/status/2124848648848843259</a></li>
+      <li><strong>来源标注：</strong>【账号池】@bbkirstry</li>
+      </ul>
+      <h2 id="6-身心整合终身学习超级个体补充">6. 身心整合/终身学习/超级个体补充</h2>
+      <h3 id="61-bruce三倍做多身体两倍做多朋友核心-kol">6.1 Bruce：三倍做多身体，两倍做多朋友（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>与「改口重新社交」同一天，@qzhxjhj 把行动写成口号：「三倍做多身体，两倍做多朋友」，并提到 11 月 28 日曼谷的活动，用来交朋友。这不是资产配置建议，而是他把身体和当面关系重新放到比模型输出更高优先级的位置。</li>
+      <li><strong>关键方法/工具：</strong>把训练和当面聚会写成可执行的日程，而不是口号。</li>
+      <li><strong>可行动点：</strong>本周先各落实一件：一次训练、一次不谈模型的当面聊天。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/qzhxjhj/status/2124778861187793119" target="_blank" rel="noopener noreferrer">https://x.com/qzhxjhj/status/2124778861187793119</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@qzhxjhj</li>
+      </ul>
+      <h3 id="62-身心修复局在-magpie-里zenmux-的-gemini-neon-更稳核心-kol">6.2 身心修复局：在 magpie 里，zenmux 的 Gemini Neon 更稳（核心 KOL）</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@MindfulReturn 说试了多个中转后，只有 zenmux 的 Gemini Neon 在 magpie 里最稳定、速度快、价格相对便宜；其他来源有的能拉到模型，但连测试连接都失败。他提醒在 magpie 里选对应插件。这是个人体感，没有给出压测数据。同窗口里还有收购猜测和股票口号，信息增量不足，不单独成条，也不构成投资建议。</li>
+      <li><strong>关键方法/工具：</strong>magpie；zenmux 插件。</li>
+      <li><strong>可行动点：</strong>已经在 magpie 里跑 Neon 且频繁失败的人，可以对照他的插件选择做一次连通测试，用自己的延迟和失败率说话。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/MindfulReturn/status/2124827136934756591" target="_blank" rel="noopener noreferrer">https://x.com/MindfulReturn/status/2124827136934756591</a></li>
+      <li><strong>来源标注：</strong>【核心 KOL】@MindfulReturn</li>
+      </ul>
+      <h3 id="63-宝玉用数独和成绩单把-p-与-np-讲清楚">6.3 宝玉：用数独和成绩单把 P 与 NP 讲清楚</h3>
+      <ul>
+      <li><strong>核心观点：</strong>在黎曼猜想余波还在扩散时，@dotey 做了一期预科普：手机网银密码其实靠一道至今没被证明的数学难题撑着。视频用数独、排成绩单和集合图，讲什么是 P、什么是 NP，以及为什么人们关心 P = NP，并正面回答四个高频问题。这是面向非专业读者的终身学习材料，不是新的证明。</li>
+      <li><strong>关键方法/工具：</strong>用日常任务类比复杂度类。</li>
+      <li><strong>可行动点：</strong>如果最近只是在转发「AI 证明了某某猜想」，可以先花几分钟把 P/NP 的定义看清楚，再决定自己到底在兴奋什么。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dotey/status/2124681897263444343" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2124681897263444343</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dotey</li>
+      </ul>
+      <h2 id="7-媒体工具其他">7. 媒体/工具/其他</h2>
+      <h3 id="71-tw93-的-2026-年度-24-个常用-mac-软件有了-ai-之后常用工具反而变少了">7.1 Tw93 的 2026 年度 24 个常用 Mac 软件：有了 AI 之后，常用工具反而变少了</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@HiTw93 的年度固定节目。他明确说「有了 AI 以后反而常用软件少了很多，只有这 24 个了」，这是个人清单不是必备榜。编码主力是 Claude Code CLI（默认 Opus 5.5 high，复杂任务用 Fable 5.2 medium），不再用 Codex 和多 Agent 工具，理由是喜欢简单可控。其他高频项包括：Mole（清理和系统状态）、Kaku 终端、ego lite 浏览器（给 Agent 单独窗口；很少让 AI 操作浏览器则仍推荐 Helium）、1Password、妙言（Markdown 笔记）、Grok Bot（当 Personal Agent 做答疑、退款、投资报告和日报）、UU远程、Apple Music、Pake（网页打包成桌面 App）、Shottr（约 4 美元的截图工具）、微信输入法、Parallels、Bob 翻译、Input Source Pro（按应用自动切中英文）、NetNewsWire、Sketch、Top Calendar、AyuGram、Stash、Raycast（对照着看更轻的 Tinycast）、uPic、Command X，以及主要用于看 diff 和 README 的 VS Code。非程序员若只挑几个：妙言、Shottr、Pake、Input Source Pro、Bob，往往就够用。</li>
+      <li><strong>关键方法/工具：</strong>见上述清单；Claude Code CLI。</li>
+      <li><strong>可行动点：</strong>不要 24 个都装。先看自己缺的是「记录、截图、远程、密码、输入法」里的哪一块，再从对应项试一个。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/HiTw93/status/2124843831141302316" target="_blank" rel="noopener noreferrer">https://x.com/HiTw93/status/2124843831141302316</a></li>
+      <li><strong>来源标注：</strong>【账号池】@HiTw93</li>
+      </ul>
+      <h3 id="72-matt-pocockvercel-board-的价值是人和-agent-共用一个工作区多数团队应该自己做">7.2 Matt Pocock：Vercel Board 的价值是「人和 Agent 共用一个工作区」，多数团队应该自己做</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@mattpocockuk 称 Vercel Board 这几天让他非常兴奋，但他认为大多数团队应该从零做自己的版本：本质上就是给 Agent 和开发者共用的私有 Slack 工作区（还可以同步到 Slack 频道，便于观察）。他列出几个因此变简单的点：每个本地 Agent 和每个人都有身份，Grill 的时候可以直接 @人或 @对方的 Agent；本地 Agent 可以用未读消息当队列，远程 Agent 发来的任务在本地唤醒后继续，从而衔接本地与远程；定时任务就是给 Agent 发一条重复消息；还可以做成厂商无关的协作层，并把确定性工作流注册成 <code>/commands</code>，让 Agent 触发后再回写到板上。@kentcdodds 则说可以用 Kody 原语搭自己的 Board，而且已经在做，事件驱动、可替换部件。@mattpocockuk 晚上另有一条「I've been cooking」带演示，具体产物见原帖媒体。</li>
+      <li><strong>关键方法/工具：</strong>Vercel Board；自建 Agent 工作区；Kody。</li>
+      <li><strong>可行动点：</strong>与其等待官方 Board 完美，不如先把「人、本地 Agent、远程 Agent」放进同一个可 @、可排队的频道，看协作是否真的变顺。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/mattpocockuk/status/2124797717834543167" target="_blank" rel="noopener noreferrer">https://x.com/mattpocockuk/status/2124797717834543167</a> ；<a href="https://x.com/kentcdodds/status/2124895899243655378" target="_blank" rel="noopener noreferrer">https://x.com/kentcdodds/status/2124895899243655378</a></li>
+      <li><strong>来源标注：</strong>【账号池】@mattpocockuk、@kentcdodds</li>
+      </ul>
+      <h3 id="73-potetopstack-新增-reframe解决想得到却说不清">7.3 poteto：pstack 新增 /reframe，解决「想得到却说不清」</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@poteto 说「you can only prompt what you can imagine」，并推出 pstack 里的新 skill <code>/reframe</code>：适合已经知道自己要什么、但苦于不会表达的时候，还可以和 <code>/sharpen</code> 一起用。这是对提示词环节的补丁，不是新模型。</li>
+      <li><strong>关键方法/工具：</strong>pstack <code>/reframe</code>、<code>/sharpen</code>。</li>
+      <li><strong>可行动点：</strong>下次对着 Agent 反复重写需求时，先跑一遍 /reframe，再开始改代码。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/poteto/status/2125029185379008573" target="_blank" rel="noopener noreferrer">https://x.com/poteto/status/2125029185379008573</a></li>
+      <li><strong>来源标注：</strong>【账号池】@poteto</li>
+      </ul>
+      <h3 id="74-小莫tailscale-不只是组内网还有-4-个开箱即用的功能">7.4 小莫：Tailscale 不只是组内网，还有 4 个开箱即用的功能</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps 认为很多人只用了 Tailscale 的内网组网，浪费了其他开箱功能。他列了四条：打开 MagicDNS 后用设备名访问，不必背 100.x.x.x；<code>tailscale serve</code> 可把本地端口变成带有效证书的 HTTPS 内网地址，临时对外再配 <code>funnel</code>；Tailscale SSH 用它自己的身份和权限接管 SSH，少管理一套公钥；Taildrop 可在分享菜单里点对点传文件、不限大小，同一局域网会走本地直连。他同时建议：现在学软件功能，可以直接让 AI 带你操作。</li>
+      <li><strong>关键方法/工具：</strong>MagicDNS；Serve / Funnel；Tailscale SSH；Taildrop。</li>
+      <li><strong>可行动点：</strong>已经在用 Tailscale 的，今天先打开 MagicDNS 和 Taildrop 试一项，确认自己不是只用了 20% 的功能。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2124835639707463937" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2124835639707463937</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps</li>
+      </ul>
+      <h3 id="75-dreamcodermastering-emacs-作者做了-15-个月的多-agent-工作台">7.5 DreamCoder：Mastering Emacs 作者做了 15 个月的多 Agent 工作台</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@xiaomovps 介绍 Pi 作者 Mario 点名推荐的 DreamCoder：Mastering Emacs 作者闭关约 15 个月做的 AI Coding Harness。设计差异包括：不是窄终端或「左列表右对话框」，而是浏览器里的平铺窗口管理器；右上角有状态小地图，干活会闪、卡在权限审批会提示、跑完变绿；Emacs 风格纯键盘操作；作者称缓存命中率可达 99%，可连续跑多天，支持 Docker 沙箱，并能一键导入 Pi、OpenCode 和 Codex 配置，对本地开源模型也友好。作者在评论区说明：目前还不支持直连 Claude Code Max 订阅，主要走 API 或本地模型。支持 macOS、Windows、Linux 和 Docker。原推荐帖可能略早于本窗口，小莫的评述在窗口内。</li>
+      <li><strong>关键方法/工具：</strong>DreamCoder；可导入 Pi / OpenCode / Codex 配置。</li>
+      <li><strong>可行动点：</strong>已经有一份 Pi 配置的人，可以导入进去做一次对照，重点看窗口管理和权限地图是不是真能减少「开一堆 Agent 就乱」。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/xiaomovps/status/2124804466146984258" target="_blank" rel="noopener noreferrer">https://x.com/xiaomovps/status/2124804466146984258</a></li>
+      <li><strong>来源标注：</strong>【账号池】@xiaomovps</li>
+      </ul>
+      <h3 id="76-其他短讯ladybird-发布claude-桌面版改-tabgrok-bot-更新钓鱼链接google-ultra-云积分">7.6 其他短讯：Ladybird 发布、Claude 桌面版改 Tab、Grok Bot 更新、钓鱼链接、Google Ultra 云积分</h3>
+      <ul>
+      <li><strong>核心观点：</strong>@dingyi 说等了几年的 Ladybird 浏览器终于发布，卖点是完全自研引擎，不是 Chromium、Gecko 或 WebKit 分支。@dotey 发现 Claude Code 桌面版终于把混乱的浮动面板改成了类似 Codex 的 Tab 布局，这是桌面体验更新，不是模型更新。@mattyp 介绍 Grok Bot 新功能：酒店和机票预订、在 Tailscale 的 tailnet 上跑 MCP、连接器工具权限、图片标注。@wesbos 提醒一个正在流传的手法：有人冒充 Anthropic / OpenAI / Google 员工，发 Calendly 链接再跳到权限过大的 X OAuth。另外他提到 Google AI Ultra 还包含每月 100 美元的 Google Cloud 积分，可用于 API 推理。@housecor 则发现自己写的「自动处理 PR 评论」skill 已经被原生行为替换——模型把能稳定做的事收进产品后，个人 skill 会过时。</li>
+      <li><strong>关键方法/工具：</strong>Ladybird；Claude Code 桌面版 Tab 布局；Grok Bot 新能力；识别 Calendly 跳转 OAuth。</li>
+      <li><strong>可行动点：</strong>见到「实验室员工请你排期」的 Calendly 链接，先看最终跳转是不是 OAuth 授权页，不要用主力账号直接点。</li>
+      <li><strong>原帖链接：</strong><a href="https://x.com/dingyi/status/2124902153903055135" target="_blank" rel="noopener noreferrer">https://x.com/dingyi/status/2124902153903055135</a> ；<a href="https://x.com/dotey/status/2125005958762172419" target="_blank" rel="noopener noreferrer">https://x.com/dotey/status/2125005958762172419</a> ；<a href="https://x.com/mattyp/status/2124880662750724594" target="_blank" rel="noopener noreferrer">https://x.com/mattyp/status/2124880662750724594</a> ；<a href="https://x.com/wesbos/status/2124872294615138399" target="_blank" rel="noopener noreferrer">https://x.com/wesbos/status/2124872294615138399</a> ；<a href="https://x.com/wesbos/status/2125000978516549943" target="_blank" rel="noopener noreferrer">https://x.com/wesbos/status/2125000978516549943</a> ；<a href="https://x.com/housecor/status/2124982366540005679" target="_blank" rel="noopener noreferrer">https://x.com/housecor/status/2124982366540005679</a></li>
+      <li><strong>来源标注：</strong>【账号池】@dingyi、@dotey、@mattyp、@wesbos、@housecor</li>
+      </ul>
+      <p class="brief-end">
+        <a href="2026-11-23.html">较早一天</a>
+        <a href="../index.html">返回目录</a>
+        <a href="2026-11-24.md">Markdown 原文</a>
+      </p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>凯旋 · AI圈每日简报</p>
+    <p><a href="https://github.com/kaixuan94/ai-daily-briefing">GitHub 仓库</a></p>
+  </footer>
+</body>
+</html>
